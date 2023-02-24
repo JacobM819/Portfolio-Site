@@ -1,0 +1,36 @@
+header {
+    background: url("../images/header-img.jpeg") bottom no-repeat fixed;
+    background-size: cover;
+    /*width: 100%;*/
+    height: 100vh;
+}
+
+
+.header-table {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: #1b1e21;
+}
+
+#portrait{
+    border-radius: 50%;
+    border: 6px blue solid;
+}
+header i {
+    font-size: 30px;
+}
+
+header a:hover {
+    transition: ease .5s;
+    color: #005cbf;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
