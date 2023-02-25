@@ -1,12 +1,20 @@
+:root {
+    --primary: #f8f9fa;
+    --accent: #9c27b0;
+}
+
 header {
-    /*background: url("../images/header-img.jpeg") bottom no-repeat fixed;*/
-    background-color: #182230;
+    background: url("../images/header-background.jpg") bottom no-repeat fixed;
+    /*background-color: #182230;*/
     background-size: cover;
     height: 100vh;
     min-height: 500px;
     position: relative;
 }
 
+nav hr {
+    border: 1px var(--primary) solid
+}
 
 .header-table {
     height: 100%;
@@ -20,19 +28,19 @@ main {
 
 #portrait{
     border-radius: 50%;
-    border: 4px tomato solid;
+    border: 4px var(--accent) solid;
 }
 header i {
     font-size: 30px;
 }
 
 .flex a {
-    color: #f8f9fa;
+    color: var(--primary);
+    transition: color .4s ease-in-out;
 }
 
 .flex a :hover {
-    color: #005cbf;
-    transition:  color .3s ease-in-out;
+    color: var(--accent);
 }
 
 .flex{
