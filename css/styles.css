@@ -20,13 +20,17 @@ main {
 
 #portrait{
     border-radius: 50%;
-    border: 4px blue solid;
+    border: 4px tomato solid;
 }
 header i {
     font-size: 30px;
 }
 
-a:hover {
+.flex a {
+    color: #f8f9fa;
+}
+
+.flex a :hover {
     color: #005cbf;
     transition:  color .3s ease-in-out;
 }
