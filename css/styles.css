@@ -1,10 +1,13 @@
 :root {
     --primary: #f8f9fa;
-    --accent: #9c27b0;
+    --accent: lightseagreen;
+    /*--accent: #9c27b0;*/
+    --f-primary: "";
+    --f-code: 'JetBrains Mono', monospace;
 }
 
 header {
-    background: url("../images/header-background.jpg") bottom no-repeat fixed;
+    background: url("../images/bg.jpg") bottom no-repeat fixed;
     /*background-color: #182230;*/
     background-size: cover;
     height: 100vh;
