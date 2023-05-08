@@ -1,0 +1,76 @@
+:root {
+  --primary: #f8f9fa;
+  --accent: lightseagreen;
+  /*--accent: #9c27b0;*/
+  --f-primary: "";
+  --f-code: 'JetBrains Mono', monospace;
+}
+
+header {
+  background: url("images/bg.png") bottom no-repeat fixed;
+  /*background-color: #182230;*/
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+nav hr {
+  border: 1px var(--primary) solid
+}
+
+.header-table {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  background-color: #1b1e21;
+}
+
+#portrait{
+  border-radius: 50%;
+  border: 4px var(--accent) solid;
+}
+header i {
+  font-size: 30px;
+}
+
+.flex a {
+  color: var(--primary);
+  transition: color .4s ease-in-out;
+}
+
+.flex a :hover {
+  color: var(--accent);
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul {
+  min-height: 48px;
+  width: auto;
+  text-align: center
+}
+
+nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  color: white;
+  padding: 16px 15px;
+  letter-spacing: 2px;
+}
