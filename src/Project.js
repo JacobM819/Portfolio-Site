@@ -1,5 +1,14 @@
-export default function Project(title, image, description) {
+import React from "react";
+
+export default function Project(props) {
     return (
-        console.log("hello")
-    );
+    <div className={"card"} style={{width:'21vw', border: 'none'}}>
+        <img className={"card-img-top"} src={props.img}  alt={""}/>
+        <div className={"card-body proj-body"}>
+            <h5 className={"card-title"}>{props.title}</h5>
+            <p className={"card-text"}>{props.description}</p>
+            <a href={props.link} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
+        </div>
+    </div>
+);
 }

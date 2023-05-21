@@ -18,7 +18,7 @@ export default function Preloader() {
 
     if (!done) {
         return(
-            <body>
+            <body id={"loader-body"}>
             <h1 id={"loader"}>Jacob Meyer Portfolio</h1>
             </body>
         );

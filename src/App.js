@@ -2,7 +2,9 @@ import './App.css';
 import Nav from "./Nav";
 import Project from "./Project"
 import React from "react";
-import portrait from "./images/blank.png"
+import blank from "./images/blank.png"
+import portrait from "./images/portrait.png"
+import zoom from "./images/zoom.jpg"
 
 function App() {
   return (
@@ -21,10 +23,10 @@ function App() {
                         <div className="flex" style={{paddingTop:"10px"}}>
                             <a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank" rel={"noreferrer"}><i className="fab fa-linkedin"></i></a>
-                            <a href="mailto:jakem3350@gmail.com" target="_blank"><i className="fas fa-envelope"></i></a>
+                            <a href="mailto:jakem3350@gmail.com" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
                         </div>
                     </div>
-                    <div className={"col-lg-3"}><img id={"portrait"} className={"img-fluid"} src={portrait} alt={"portrait"} width={"300vw"}/></div>
+                    <div className={"col-lg-3"}><img id={"portrait"} className={"img-fluid"} src={blank} alt={"portrait"} width={"300vw"}/></div>
                   </div>
                 </td>
               </tr>
@@ -32,9 +34,9 @@ function App() {
         </table>
       </header>
       <main>
-          <div style={{width:50+'vw'}} className={"center row"}>
+          <div style={{width:'50vw', marginBottom:'60px'}} className={"center row"}>
               <div className={"col-8"}>
-                  <h1><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
+                  <h1 className={"code"}><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
                   <hr/>
                   <p>
                       Hello, my name is Jacob Meyer and I am a student who has a passion for programming.
@@ -50,7 +52,13 @@ function App() {
                   <p>
                       Here are some of the technologies I have worked with in my projects:
                   </p>
-                  <ul>
+              </div>
+              <div className={"col-4 img-frame"}>
+                  <span className={"helper"}></span>
+                  <img className={"img-fluid about-portrait"} src={portrait} width={"400vw"} alt={"portrait"}/>
+              </div>
+              <div className={"row"}>
+                  <ul >
                       <li>Python</li>
                       <li>C#</li>
                       <li>Java</li>
@@ -59,10 +67,62 @@ function App() {
                       <li>React</li>
                   </ul>
               </div>
-              <div className={"col-4 img-frame"}>
-                  <span className={"helper"}></span>
-                  <img className={"img-fluid about-portrait"} src={portrait} width={"400vw"} alt={"portrait"}/>
+          </div>
+          <div className={"m-auto proj-container"}>
+              <h1 className={"code"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
+              <hr/>
+            <div className={"row mb-4"}>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
+                </div>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
+                </div>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
               </div>
+            </div>
+            <div className={"row mb-4"}>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
+                </div>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
+                </div>
+                <div className={"col"}>
+                    <Project
+                        title={"Zoom Meeting Organizer"}
+                        img={zoom}
+                        description={"Lorem ipsum"}
+                        link={"link.com"}
+                    ></Project>
+                </div>
+            </div>
           </div>
       </main>
       </body>

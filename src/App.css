@@ -10,6 +10,10 @@ body {
   color: #fff;
 }
 
+#loader-body {
+  background-color: #031102;
+}
+
 header {
   background-color: #031102;
   background-size: cover;
@@ -43,10 +47,6 @@ nav hr {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-main {
-  background-color: #1b1e21;
 }
 
 #portrait{
@@ -103,6 +103,7 @@ nav li {
 main {
   padding-top: 60px;
   padding-bottom:60px;
+  background-color: #1b1e21;
 }
 
 hr {
@@ -135,4 +136,17 @@ hr {
 .about-image {
   vertical-align: middle;
   min-width: 20px;
+}
+
+.proj-container {
+  width:70%;
+}
+
+.proj-body {
+  background-color: #031102;
+  border: none;
+}
+
+.code {
+  font-family: var(--f-code);
 }

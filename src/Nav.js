@@ -1,14 +1,14 @@
 import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
 export default function Nav() {
-    var prevScrollpos = window.pageYOffset;
+    var prevScrollPos = window.scrollY;
     window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        var currentScrollPos = window.scrollY;
+        if (prevScrollPos >= currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
             document.getElementById("navbar").style.top = "-70px";
         }
-        prevScrollpos = currentScrollPos;
+        prevScrollPos = currentScrollPos;
     }
     return  (
         <nav id={'navbar'}>
