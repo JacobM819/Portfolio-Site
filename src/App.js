@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Nav from "./Nav";
+import Project from "./Project"
 import React from "react";
-import portrait from "./images/portrait.png"
+import portrait from "./images/blank.png"
 
 function App() {
   return (
@@ -15,15 +15,16 @@ function App() {
                 <td>
                   <div className={"row"}>
                     <div className={"col-lg-auto m-auto"}>
-                      <h1 className={"text-white"} style={{fontSize:"6.5vw"}}>Jacob Meyer</h1>
-                      <h2 className={"text-white"}>Computer Science Major | Penn State University</h2>
-                      <div className="flex" style={{paddingTop:"10px"}}>
-                        <a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank" rel={"noreferrer"}><i className="fab fa-linkedin"></i></a>
-                        <a href="mailto:jakem3350@gmail.com" target="_blank"><i className="fas fa-envelope"></i></a>
-                      </div>
+                        <h3 className={"code-text mb-0"}>Hi, nice to meet you. My name is</h3>
+                        <h1 className={"text-white"} style={{fontSize:"6.5vw"}}>Jacob Meyer</h1>
+                        <h2 className={"text-white"} style={{fontSize:"2vw"}}>Computer Science Major | Penn State University</h2>
+                        <div className="flex" style={{paddingTop:"10px"}}>
+                            <a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank" rel={"noreferrer"}><i className="fab fa-linkedin"></i></a>
+                            <a href="mailto:jakem3350@gmail.com" target="_blank"><i className="fas fa-envelope"></i></a>
+                        </div>
                     </div>
-                    <div className={"col-lg"}><img id={"portrait"} src={portrait} alt={"portrait"} width={"300px"}/></div>
+                    <div className={"col-lg-3"}><img id={"portrait"} className={"img-fluid"} src={portrait} alt={"portrait"} width={"300vw"}/></div>
                   </div>
                 </td>
               </tr>
@@ -31,7 +32,38 @@ function App() {
         </table>
       </header>
       <main>
-        <h1 className={"text-primary"}>Hello World!</h1>
+          <div style={{width:50+'vw'}} className={"center row"}>
+              <div className={"col-8"}>
+                  <h1><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
+                  <hr/>
+                  <p>
+                      Hello, my name is Jacob Meyer and I am a student who has a passion for programming.
+                      I am currently a sophomore studying computer science at Penn State University. After college,
+                      I am looking forward to having a great career in the tech field.
+                  </p>
+                  <p>
+                      In my free time, I enjoy creating software for other people to use. I have created a number of
+                      apps and programs over the past few years, all of which I keep open source on my github page.
+                      I am currently searching for a Software Engineering internship position for Summer 2024, and I am
+                      excited to learn and grow in tech.
+                  </p>
+                  <p>
+                      Here are some of the technologies I have worked with in my projects:
+                  </p>
+                  <ul>
+                      <li>Python</li>
+                      <li>C#</li>
+                      <li>Java</li>
+                      <li>JavaScript</li>
+                      <li>Node.js</li>
+                      <li>React</li>
+                  </ul>
+              </div>
+              <div className={"col-4 img-frame"}>
+                  <span className={"helper"}></span>
+                  <img className={"img-fluid about-portrait"} src={portrait} width={"400vw"} alt={"portrait"}/>
+              </div>
+          </div>
       </main>
       </body>
   );

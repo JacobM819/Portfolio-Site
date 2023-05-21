@@ -1,13 +1,23 @@
-// import {HashLink as Link} from 'react-router-hash-link';
+import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
 export default function Nav() {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
     return  (
-        <nav>
+        <nav id={'navbar'}>
             <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Resume</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href={""}>Home</a></li>
+                <li><a href={""}>About Me</a></li>
+                <li><a href={""}>Projects</a></li>
+                <li><a href={""}>Contact</a></li>
+                <li><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
             </ul>
             <hr/>
         </nav>
