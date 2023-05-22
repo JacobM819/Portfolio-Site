@@ -4,15 +4,16 @@ import './index.css';
 import './bootstrap/bootstrap.css'
 import './bootstrap/bootstrap-grid.css'
 import './bootstrap/bootstrap-reboot.css'
-import App from './App'
+import Preloader from './Preloader.js';
+import App from './App';
 // import Preloader from './Preloader';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      {/*<Preloader/>*/}
-      <App/>
+      <Preloader/>
+      {/*<App/>*/}
   </React.StrictMode>
 );
 

@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Project from "./Project";
 import React, { useEffect } from "react";
 import Aos from "aos";
-import "./misc/aos.scss"
+import "./misc/aos.scss";
 import blank from "./images/blank.png";
 import portrait from "./images/portrait.png";
 import zoom from "./images/zoom.jpg";
@@ -22,9 +22,15 @@ function App() {
                 <td>
                   <div className={"row"}>
                     <div className={"col-lg-auto m-auto"}>
-                        <h3 className={"code-text mb-0"}>Hi, nice to meet you. My name is</h3>
-                        <h1 className={"text-white"} style={{fontSize:"6.5vw"}}>Jacob Meyer</h1>
-                        <h2 className={"text-white"} style={{fontSize:"2vw"}}>Computer Science Major | Penn State University</h2>
+                        <h3 className={"code-text mb-0"} data-aos={"fade-up"} data-aos-once="true">
+                            Hi, nice to meet you. My name is
+                        </h3>
+                        <h1 className={"text-white"} style={{fontSize:"6.5vw"}} data-aos={"fade-up"} data-aos-delay={"100"} data-aos-once="true">
+                            Jacob Meyer
+                        </h1>
+                        <h2 className={"text-white"} style={{fontSize:"2vw"}} data-aos={"fade-up"} data-aos-delay={"200"} data-aos-once="true">
+                            Computer Science Major | Penn State University
+                        </h2>
                         <div className="flex" style={{paddingTop:"10px"}}>
                             <a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank" rel={"noreferrer"}><i className="fab fa-linkedin"></i></a>
@@ -41,7 +47,7 @@ function App() {
       <main>
           <div style={{width:'60vw', maxWidth:'1000px', marginBottom:'60px'}} className={"section center row"}>
               <div className={"col-8"}>
-                  <h1 className={"code"} data-aos={"fade-right"}><span style={{color:'limegreen'}}>1.</span> About Me</h1>
+                  <h1 className={"code"} data-aos={"fade-right"} data-aos-once="true"><span style={{color:'limegreen'}}>1.</span> About Me</h1>
                   <hr/>
                   <p>
                       Hello, my name is Jacob Meyer and I am a student who has a passion for programming.
@@ -74,9 +80,9 @@ function App() {
               </div>
           </div>
           <div className={"section m-auto proj-container"}>
-              <h1 className={"code"} data-aos={"fade-right"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
+              <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
               <hr/>
-            <div className={"row mb-4"}>
+            <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
                 <div className={"col"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
@@ -102,7 +108,7 @@ function App() {
                     ></Project>
               </div>
             </div>
-            <div className={"row mb-4"}>
+            <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
                 <div className={"col"}>
                     <Project
                         title={"Zoom Meeting Organizer"}

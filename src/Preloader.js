@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import App from "./App"
+import React, {useEffect, useState} from 'react';
+import App from "./App";
 export default function Preloader() {
 
     const [data, setData] = useState([]);
@@ -18,8 +18,11 @@ export default function Preloader() {
 
     if (!done) {
         return(
-            <body id={"loader-body"}>
-            <h1 id={"loader"}>Jacob Meyer Portfolio</h1>
+            <body className={"z-5"}>
+            <h1 id={"loader"}>
+                <span className={"code"}>Jacob Meyer</span>
+                <span className={"code"}> Portfolio_</span>
+            </h1>
             </body>
         );
     } else {

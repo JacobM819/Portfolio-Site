@@ -6,11 +6,17 @@
 }
 
 body {
+  background-color: #031102;
   color: #fff;
 }
 
-#loader-body {
-  background-color: #031102;
+#loader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: limegreen;
 }
 
 header {
@@ -35,6 +41,7 @@ nav {
 nav a {
   color: #fff;
   transition: ease-in-out 0.3s;
+  text-decoration: none;
 }
 
 nav a :hover {
@@ -57,7 +64,6 @@ nav li {
   list-style: none;
   height: 48px;
   display: inline-block;
-  color: white;
   padding: 16px 15px;
   letter-spacing: 2px;
 }
@@ -110,15 +116,6 @@ hr {
   margin: auto;
 }
 
-#loader {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
 .img-frame {
   white-space: nowrap;
 }
@@ -168,9 +165,3 @@ hr {
   filter: blur(0);
   transform: translateX(0);
 }
-
-/*@media(prefers-reduced-motion) {*/
-/*  .hidden {*/
-/*    transition: none;*/
-/*  }*/
-/*}*/
