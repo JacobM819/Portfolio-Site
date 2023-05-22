@@ -1,13 +1,18 @@
 import './App.css';
 import Nav from "./Nav";
-import Project from "./Project"
-import React from "react";
-import blank from "./images/blank.png"
-import portrait from "./images/portrait.png"
-import zoom from "./images/zoom.jpg"
+import Project from "./Project";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "./misc/aos.scss"
+import blank from "./images/blank.png";
+import portrait from "./images/portrait.png";
+import zoom from "./images/zoom.jpg";
 
 function App() {
-  return (
+    useEffect(() => {
+       Aos.init({ duration: 750});
+    }, []);
+        return (
       <body>
       <header>
         <Nav></Nav>
@@ -34,9 +39,9 @@ function App() {
         </table>
       </header>
       <main>
-          <div style={{width:'50vw', marginBottom:'60px'}} className={"center row"}>
+          <div style={{width:'60vw', maxWidth:'1000px', marginBottom:'60px'}} className={"section center row"}>
               <div className={"col-8"}>
-                  <h1 className={"code"}><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
+                  <h1 className={"code"} data-aos={"fade-right"}><span style={{color:'limegreen'}}>1.</span> About Me</h1>
                   <hr/>
                   <p>
                       Hello, my name is Jacob Meyer and I am a student who has a passion for programming.
@@ -68,8 +73,8 @@ function App() {
                   </ul>
               </div>
           </div>
-          <div className={"m-auto proj-container"}>
-              <h1 className={"code"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
+          <div className={"section m-auto proj-container"}>
+              <h1 className={"code"} data-aos={"fade-right"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
               <hr/>
             <div className={"row mb-4"}>
                 <div className={"col"}>

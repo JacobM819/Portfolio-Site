@@ -1,8 +1,7 @@
 :root {
   --primary: #f8f9fa;
   --accent: limegreen;
-  /*--accent: #9c27b0;*/
-  --f-primary: "";
+  /*--f-primary: "";*/
   --f-code: 'JetBrains Mono', monospace;
 }
 
@@ -27,6 +26,10 @@ nav {
   position: fixed;
   top: 0;
   display: block;
+  width: 100%;
+  z-index: 100;
+  background-color: #031102;
+  border-bottom: 2px solid #fff;
 }
 
 nav a {
@@ -41,6 +44,22 @@ nav a :hover {
 
 nav hr {
   border: 1px var(--primary) solid;
+}
+
+nav ul {
+  min-height: 48px;
+  width: auto;
+  text-align: center
+}
+
+nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  color: white;
+  padding: 16px 15px;
+  letter-spacing: 2px;
 }
 
 .header-table {
@@ -70,29 +89,6 @@ header i {
   display: flex;
   justify-content: space-around;
   width: 50%;
-}
-
-nav {
-  display: block;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-nav ul {
-  min-height: 48px;
-  width: auto;
-  text-align: center
-}
-
-nav li {
-  position: relative;
-  list-style: none;
-  height: 48px;
-  display: inline-block;
-  color: white;
-  padding: 16px 15px;
-  letter-spacing: 2px;
 }
 
 .code-text {
@@ -140,6 +136,15 @@ hr {
 
 .proj-container {
   width:70%;
+  max-width:1000px;
+}
+
+.card {
+  transition: .3s ease-in-out;
+}
+
+.card :hover {
+  top: -100px;
 }
 
 .proj-body {
@@ -150,3 +155,22 @@ hr {
 .code {
   font-family: var(--f-code);
 }
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*@media(prefers-reduced-motion) {*/
+/*  .hidden {*/
+/*    transition: none;*/
+/*  }*/
+/*}*/

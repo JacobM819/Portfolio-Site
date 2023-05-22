@@ -1,8 +1,8 @@
 import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
 export default function Nav() {
-    var prevScrollPos = window.scrollY;
+    let prevScrollPos = window.scrollY;
     window.onscroll = function() {
-        var currentScrollPos = window.scrollY;
+        let currentScrollPos = window.scrollY;
         if (prevScrollPos >= currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
@@ -19,7 +19,6 @@ export default function Nav() {
                 <li><a href={""}>Contact</a></li>
                 <li><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
             </ul>
-            <hr/>
         </nav>
     );
 }
