@@ -1,0 +1,63 @@
+import React from "react";
+import html from "./images/langs/html.png";
+import css from "./images/langs/css.png";
+import js from "./images/langs/js.png";
+import python from "./images/langs/python.png";
+import java from "./images/langs/java.png";
+import react from "./images/langs/react.png";
+import node from "./images/langs/node.png";
+import php from "./images/langs/php.png";
+import linux from "./images/langs/linux.png";
+import github from "./images/langs/github.png";
+import vs from "./images/langs/vs.svg.png"
+import bootstrap from "./images/langs/bootstrap.svg.png";
+import vim from "./images/langs/vim.svg.png";
+
+
+export default function Skills() {
+    return (
+        <section id={"section2"} className={"proj-container"}>
+            <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
+            <hr/>
+            <h3 className={"code mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages/Technologies</h3>
+            <div className={"grid row ml-1"}>
+                <div className={"col-5"}>
+                    <div className={"row"}>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={python} alt={"python"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={java} alt={"java"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={react} alt={"react"}/></div>
+                    </div>
+                    <div className={"row mt-3"}>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={node} alt={"node"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={php} alt={"php"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={bootstrap} alt={"bootstrap"}/></div>
+                    </div>
+                    <div className={"row mt-3"}>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={html} alt={"html"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={css} alt={"css"}/></div>
+                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={js} alt={"js"}/></div>
+                    </div>
+                </div>
+                <div className={"col-5 ml-auto mr-0"}>
+                    <div className={"skills-card"}>
+
+                    </div>
+                </div>
+            </div>
+            <h3 className={"code mt-5 mb-4"}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
+            <div className={"grid row ml-1"}>
+                <div className={"col-6"}>
+                    <div className={"skills-card"}>
+
+                    </div>
+                </div>
+                <div className={"row ml-auto mr-auto"}>
+                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={github} alt={"github"}/></div>
+                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={vs} alt={"vs code"}/></div>
+                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={linux} alt={"linux"}/></div>
+                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={vim} alt={"vim"}/></div>
+                </div>
+            </div>
+        </section>
+    );
+}

@@ -1,12 +1,13 @@
 import './App.css';
 import Nav from "./Nav";
-import Project from "./Project";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "./misc/aos.scss";
 import blank from "./images/blank.png";
-import portrait from "./images/portrait.png";
-import zoom from "./images/zoom.jpg";
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
     useEffect(() => {
@@ -16,6 +17,14 @@ function App() {
       <body>
       <header>
         <Nav></Nav>
+          <aside>
+              <ul>
+                  <li data-aos={"fade-left"}><a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+                  <li data-aos={"fade-left"} data-aos-delay={"100"}><a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                  <li data-aos={"fade-left"} data-aos-delay={"200"}><a href="https://www.instagram.com/jacob_meyer115/"><i height="24px" className="fa-brands fa-instagram fa-fw"></i></a></li>
+                  <li ><a href="mailto:jakem3350@gmail.com" target="_blank" rel="noreferrer"><i className="fa-light fa-envelope fa-fw"></i></a></li>
+              </ul>
+          </aside>
         <table className={"header-table"}>
             <tbody>
               <tr className={"header-table"}>
@@ -45,97 +54,14 @@ function App() {
         </table>
       </header>
       <main>
-          <div style={{width:'60vw', maxWidth:'1000px', marginBottom:'60px'}} className={"section center row"}>
-              <div className={"col-8"}>
-                  <h1 className={"code"} data-aos={"fade-right"} data-aos-once="true"><span style={{color:'limegreen'}}>1.</span> About Me</h1>
-                  <hr/>
-                  <p>
-                      Hello, my name is Jacob Meyer and I am a student who has a passion for programming.
-                      I am currently a sophomore studying computer science at Penn State University. After college,
-                      I am looking forward to having a great career in the tech field.
-                  </p>
-                  <p>
-                      In my free time, I enjoy creating software for other people to use. I have created a number of
-                      apps and programs over the past few years, all of which I keep open source on my github page.
-                      I am currently searching for a Software Engineering internship position for Summer 2024, and I am
-                      excited to learn and grow in tech.
-                  </p>
-                  <p>
-                      Here are some of the technologies I have worked with in my projects:
-                  </p>
-              </div>
-              <div className={"col-4 img-frame"}>
-                  <span className={"helper"}></span>
-                  <img className={"img-fluid about-portrait"} src={portrait} width={"400vw"} alt={"portrait"}/>
-              </div>
-              <div className={"row"}>
-                  <ul >
-                      <li>Python</li>
-                      <li>C#</li>
-                      <li>Java</li>
-                      <li>JavaScript</li>
-                      <li>Node.js</li>
-                      <li>React</li>
-                  </ul>
-              </div>
-          </div>
-          <div className={"section m-auto proj-container"}>
-              <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> My Projects</h1>
-              <hr/>
-            <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-                </div>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-                </div>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-              </div>
-            </div>
-            <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-                </div>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-                </div>
-                <div className={"col"}>
-                    <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Lorem ipsum"}
-                        link={"link.com"}
-                    ></Project>
-                </div>
-            </div>
-          </div>
+            <About></About>
+            <Skills></Skills>
+            <Projects></Projects>
       </main>
+      <footer>
+          <Contact></Contact>
+          <h6>Designed & Developed by Jacob Meyer 2023</h6>
+      </footer>
       </body>
   );
 }

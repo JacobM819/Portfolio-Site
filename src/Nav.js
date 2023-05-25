@@ -1,3 +1,4 @@
+import React from "react";
 import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
 export default function Nav() {
     let prevScrollPos = window.scrollY;
@@ -11,12 +12,13 @@ export default function Nav() {
         prevScrollPos = currentScrollPos;
     }
     return  (
+
         <nav id={'navbar'}>
             <ul>
-                <li><a href={""}>Home</a></li>
-                <li><a href={""}>About Me</a></li>
-                <li><a href={""}>Projects</a></li>
-                <li><a href={""}>Contact</a></li>
+                <li><a href={"#section1"}>About Me</a></li>
+                <li><a href={"#section2"}>Skills</a></li>
+                <li><a href={"#section3"}>Projects</a></li>
+                <li><a href={"#section4"}>Contact</a></li>
                 <li><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
             </ul>
         </nav>
