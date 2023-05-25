@@ -247,14 +247,13 @@ aside svg {
 
 .contact {
   width: 100%;
-  height: 500px;
   padding: 20px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: #030e02;
 }
 
 footer {
   text-align: center;
+  background-color: #030e02;
   padding-bottom: 20px;
 }
