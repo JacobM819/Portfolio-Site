@@ -32,7 +32,7 @@ return (
         </div>
         <div className={"row"}>
             <div className={"col mt-4"}>
-            <a href={Resume} className={"link-button code"} target={"_blank"} rel={"noreferrer"}>Check out my resume</a>
+            <a href={Resume} className={"link-button resume-buttom code"} target={"_blank"} rel={"noreferrer"}>Check out my resume</a>
             </div>
         </div>
     </section>

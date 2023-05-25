@@ -19,44 +19,52 @@ export default function Skills() {
         <section id={"section2"} className={"proj-container"}>
             <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
             <hr/>
-            <h3 className={"code mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages/Technologies</h3>
+            <div className={"d-block"}>
+            <h3 className={"code mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages & Technologies</h3>
             <div className={"grid row ml-1"}>
-                <div className={"col-5"}>
-                    <div className={"row"}>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={python} alt={"python"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={java} alt={"java"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={react} alt={"react"}/></div>
-                    </div>
-                    <div className={"row mt-3"}>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={node} alt={"node"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={php} alt={"php"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={bootstrap} alt={"bootstrap"}/></div>
-                    </div>
-                    <div className={"row mt-3"}>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={html} alt={"html"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={css} alt={"css"}/></div>
-                        <div className={"col-3"}><span className={"grid-helper"}></span><img src={js} alt={"js"}/></div>
+                <div className={"col-6"}>
+                    <div className={"row justify-content-center"}>
+                        <div className={"col-3"}>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={python} alt={"python"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={node} alt={"node"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={html} alt={"html"}/></div>
+                        </div>
+                        <div className={"col-3"}>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={java} alt={"java"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={php} alt={"php"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={css} alt={"css"}/></div>
+                        </div>
+                        <div className={"col-3"}>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={react} alt={"react"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={bootstrap} alt={"bootstrap"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={js} alt={"js"}/></div>
+                        </div>
                     </div>
                 </div>
-                <div className={"col-5 ml-auto mr-0"}>
-                    <div className={"skills-card"}>
+                <div className={"col-6 mr-0"}>
+                    <div className={"skills-card my-auto"}>
 
                     </div>
                 </div>
             </div>
-            <h3 className={"code mt-5 mb-4"}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
+            </div>
+            <div className={"d-block"}>
+            <h3 className={"code mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
             <div className={"grid row ml-1"}>
                 <div className={"col-6"}>
                     <div className={"skills-card"}>
 
                     </div>
                 </div>
-                <div className={"row ml-auto mr-auto"}>
+                <div className={"col-6 my-auto"}>
+                <div className={"row justify-content-center"}>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={github} alt={"github"}/></div>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={vs} alt={"vs code"}/></div>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={linux} alt={"linux"}/></div>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={vim} alt={"vim"}/></div>
                 </div>
+                </div>
+            </div>
             </div>
         </section>
     );
