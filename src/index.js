@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './bootstrap/bootstrap.css'
-import './bootstrap/bootstrap-grid.css'
-import './bootstrap/bootstrap-reboot.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'popper.js';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'popper.js';
+import './App.css';
 import Preloader from './Preloader.js';
 import App from './App';
-// import Preloader from './Preloader';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

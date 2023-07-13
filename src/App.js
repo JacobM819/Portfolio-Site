@@ -1,4 +1,3 @@
-import './App.css';
 import Nav from "./Nav";
 import React, { useEffect } from "react";
 import Aos from "aos";
@@ -54,9 +53,9 @@ function App() {
         </table>
       </header>
       <main>
-            <About></About>
-            <Skills></Skills>
-            <Projects></Projects>
+          <About/>
+          <Skills/>
+          <Projects/>
       </main>
       <footer>
           <Contact></Contact>

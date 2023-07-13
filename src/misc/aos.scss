@@ -1,14 +1,14 @@
 @import 'core';
 @import 'easing';
 @import 'animations';
-.resume-buttom {
+.resume-button {
   border-color: limegreen;
-  // border: 0;
   color: limegreen;
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 150ms ease-in-out;
+  text-decoration: none;
 
   &:after {
     content: '';

@@ -1,7 +1,6 @@
 :root {
   --primary: #031102;
   --accent: limegreen;
-  /*--f-primary: "";*/
   --f-code: 'JetBrains Mono', monospace;
 }
 
@@ -33,7 +32,7 @@ nav {
   top: 0;
   display: block;
   width: 100%;
-  z-index: 100;
+  z-index: 2;
   background-color: var(--primary);
   border-bottom: 2px solid #fff;
 }
@@ -127,17 +126,32 @@ hr {
 }
 
 .proj-container {
-  width:70%;
   max-width:1000px;
+  text-align: left;
+}
+
+.proj-button {
+  all: unset;
+  cursor: pointer;
 }
 
 .card {
   top: 0;
-  transition: top ease-out .3s
+  transition: top ease-out .3s;
+  color: white;
 }
 
 .card:hover {
   top: -10px;
+}
+
+.overlay {
+  visibility: hidden;
+  z-index: 1;
+  color: magenta;
+}
+.overlay:hover{
+  visibility: visible;
 }
 
 .proj-body {
@@ -187,7 +201,7 @@ aside {
   padding: 0 5px 0 5px;
   position: fixed;
   display: block;
-  z-index: 90;
+  z-index: 3;
   right: 0;
   top: 50%;
   -ms-transform: translate(-50%, -50%);
