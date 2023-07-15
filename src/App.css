@@ -133,6 +133,20 @@ hr {
 .proj-button {
   all: unset;
   cursor: pointer;
+  position: relative;
+}
+
+.proj-button img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.proj-button:hover .overlay {
+  opacity: 1;
 }
 
 .card {
@@ -146,18 +160,36 @@ hr {
 }
 
 .overlay {
-  visibility: hidden;
-  z-index: 1;
-  color: magenta;
-}
-.overlay:hover{
-  visibility: visible;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(40, 40, 40, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .proj-body {
   /*background-color: #031102;*/
   background-color: #1a1a1a;
   border: none;
+}
+
+.proj-icon {
+  color: var(--accent);
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .code {
