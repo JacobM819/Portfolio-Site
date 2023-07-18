@@ -145,6 +145,21 @@ hr {
   backface-visibility: hidden;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(3, 17, 2, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 .proj-button:hover .overlay {
   opacity: 1;
 }
@@ -159,30 +174,14 @@ hr {
   top: -10px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(40, 40, 40, 0.5);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .proj-body {
-  /*background-color: #031102;*/
   background-color: #1a1a1a;
   border: none;
 }
 
 .proj-icon {
   color: var(--accent);
-  font-size: 40px;
+  font-size: 35px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -245,15 +244,15 @@ aside li {
   line-height: 50px;
 }
 
-aside a {
+aside li a {
   color: var(--accent);
   transition: ease-in-out .3s;
   top: 0;
+  height: 100%;
 }
 
-aside li:hover {
+aside li a:hover {
   top: -10px;
-  color: var(--accent);
 }
 
 aside svg {
@@ -302,4 +301,44 @@ footer {
   text-align: center;
   background-color: #030e02;
   padding-bottom: 20px;
+}
+
+.type {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .08em solid limegreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+          typing 2.3s steps(30, end),
+          blink-caret .85s step-end infinite;
+}
+
+.header-type {
+  color: limegreen;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .08em solid limegreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation:
+          typing 2.3s steps(30, end),
+          blink-caret .85s step-end infinite;
+}
+
+#modal-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: limegreen; }
 }

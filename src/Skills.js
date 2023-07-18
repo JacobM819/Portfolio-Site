@@ -42,7 +42,7 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className={"col-6 mr-0"}>
-                    <div className={"skills-card my-auto"}>
+                    <div className={"skills-card"}>
 
                     </div>
                 </div>

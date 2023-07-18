@@ -1,10 +1,17 @@
 export default function Project(props) {
 
+    function updateModal() {
+        document.getElementById("exampleModalLabel").innerHTML = props.title;
+        document.getElementById("modal-img").src = props.img;
+        document.getElementById("modal-langs").innerHTML = props.description;
+        document.getElementById("git-link").href = props.link;
+        document.getElementById("web-link").href = props.link;
+    }
 
     return (
         <>
             <div className={"card"} style={{width:'21vw', maxWidth:'300px', border: 'none'}} data-toggle="modal" data-target="#exampleModal">
-                <button type={"button"} className={"proj-button btn"} data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button onClick={updateModal} type={"button"} className={"proj-button btn"} data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img className={"card-img-top"} src={props.img} alt={"project image"}/>
                     <div className={"overlay"}>
                         <i className="fa-regular fa-magnifying-glass-plus proj-icon"></i>

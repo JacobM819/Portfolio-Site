@@ -13,16 +13,18 @@ export default function Preloader() {
     //                 setData(json);
     //                 setDone(true);
     //             });
-    //         }, 2000);
+    //         }, 4200);
     //     }, [])
 
     if (done) {
         return(
             <body className={"z-5"}>
-            <h1 id={"loader"}>
-                <span className={"code"}>Jacob Meyer</span>
-                <span className={"code"}> Portfolio_</span>
-            </h1>
+            <div id={"loader"}>
+                <h1 className={"type"}>
+                    <span className={"code"}>Jacob Meyer's</span>
+                    <span className={"code"}> Portfolio </span>
+                </h1>
+            </div>
             </body>
         );
     } else {

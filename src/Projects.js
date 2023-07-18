@@ -5,7 +5,10 @@ import React from "react";
 export default function Projects() {
     return (
         <section id={"section3"} className={"proj-container"}>
-            <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
+            <div className={"row"}>
+                <h1 className={"code d-inline col-auto"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
+                <span className={"col-auto position-relative"}><h6 className={"code header-type position-absolute"} style={{bottom: "20%"}}>Click on the picture for more information</h6></span>
+            </div>
             <hr/>
             <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
                 <div className={"col"}>
