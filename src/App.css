@@ -239,6 +239,12 @@ aside {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1050px) {
+  aside {
+    display: none;
+  }
+}
+
 aside li {
   list-style: none;
   line-height: 50px;
@@ -341,4 +347,10 @@ footer {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: limegreen; }
+}
+
+footer h4 {
+  min-font-size: 10px;
+  max-font-size: 80px;
+  font-size: 130%;
 }
