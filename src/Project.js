@@ -2,7 +2,9 @@ export default function Project(props) {
 
     function updateModal() {
         document.getElementById("exampleModalLabel").innerHTML = props.title;
-        document.getElementById("modal-img").src = props.img;
+        // document.getElementById("modal-img").src = props.img;
+        document.getElementById("modal-img").style.backgroundImage = `images${props.img}`;
+        console.log(`./images${props.img}`);
         document.getElementById("modal-langs").innerHTML = props.description;
         document.getElementById("git-link").href = props.link;
         document.getElementById("web-link").href = props.link;
@@ -20,7 +22,7 @@ export default function Project(props) {
                 <div className={"card-body proj-body"}>
                     <h5 className={"card-title"}>{props.title}</h5>
                     <p className={"card-text code"}>{props.description}</p>
-                    <div className={"d-flex justify-content-between"} style={{width:"20%", maxWidth:"50px"}}>
+                    <div className={"d-flex justify-content-between"} style={{width:"20%", maxWidth:"50px", minWidth:"40px"}}>
                         <a href={props.link} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
                         <a href={props.link} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i className="fa-regular fa-arrow-up-right-from-square"></i></a>
                     </div>

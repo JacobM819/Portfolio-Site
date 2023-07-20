@@ -7,11 +7,11 @@ export default function Projects() {
         <section id={"section3"} className={"proj-container"}>
             <div className={"row"}>
                 <h1 className={"code d-inline col-auto"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
-                <span className={"col-auto position-relative"}><h6 className={"code header-type position-absolute"} style={{bottom: "20%"}}>Click on the picture for more information</h6></span>
+                {/*<span className={"col-auto position-relative"}><h6 className={"code header-type position-absolute"} style={{bottom: "20%"}}>Click on the picture for more information</h6></span>*/}
             </div>
             <hr/>
-            <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
-                <div className={"col"}>
+            <div className={"table-responsive row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
+                <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
@@ -19,7 +19,7 @@ export default function Projects() {
                         link={"link.com"}
                     ></Project>
                 </div>
-                <div className={"col"}>
+                <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
@@ -27,7 +27,7 @@ export default function Projects() {
                         link={"link.com"}
                     ></Project>
                 </div>
-                <div className={"col"}>
+                <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}

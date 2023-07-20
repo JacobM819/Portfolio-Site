@@ -4,8 +4,8 @@ export default function Modal() {
          aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" >
             <div className="modal-content" style={{backgroundColor:"var(--primary)"}}>
-                <div className="modal-header p-0">
-                    <img id={"modal-img"} className={"card-img-top"} src={""} alt={"project image"} width={1000}/>
+                <div id={"modal-img"} className="modal-header p-0" style={{height:"200px"}}>
+                    {/*<img id={"modal-img"} className={"card-img-top"} src={""} alt={"project image"} width={1000}/>*/}
                     <h1 className="modal-title text-white fs-5" id="exampleModalLabel">Title</h1>
                     <button type="button" className="btn-close" data-bs-dismiss="modal"
                             aria-label="Close" style={{color:"limegreen"}}></button>
