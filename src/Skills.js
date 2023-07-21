@@ -42,8 +42,18 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className={"col-6 mr-0"}>
-                    <div className={"skills-card"}>
+                    <div className={"skills-card p-4"}>
+                        <p>
+                            I have worked with and created projects using some of the most popular and in-demand languages.
+                            Many of the web apps that I have created recently use a combination of React.js, PHP, Node.js, and Javascript.
+                        </p>
+                        <p>
+                            I am proficient with functional programming and object-oriented design patterns, as I have worked in languages
+                            like Python and Java in some of my personal projects.
+                        </p>
+                        <p>
 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -52,8 +62,11 @@ export default function Skills() {
             <h3 className={"code mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
             <div className={"grid row ml-1"}>
                 <div className={"col-6"}>
-                    <div className={"skills-card"}>
-
+                    <div className={"skills-card p-4"}>
+                        <p>
+                            Currently, I am focused learning Amazon Web Services (AWS), as I know how big of a role cloud computing
+                            plays in today's tech industry.
+                        </p>
                     </div>
                 </div>
                 <div className={"col-6 my-auto"}>

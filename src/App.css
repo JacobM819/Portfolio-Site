@@ -282,10 +282,12 @@ aside svg {
 }
 
 .skills-card {
-  height: 200px;
-  background-color: #1a1a1a;
+  height: 350px;
+  background-color: #092509;
   border-radius: 6px;
   top: 50%;
+  color: #cecece;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact {
@@ -307,9 +309,9 @@ footer {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation:
-          typing 2.3s steps(30, end),
-          blink-caret .85s step-end infinite;
+  /*animation:*/
+  /*        typing 2.3s steps(30, end),*/
+  /*        blink-caret .85s step-end infinite;*/
 }
 
 .header-type {
@@ -328,9 +330,6 @@ footer {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.modal-header {
-
-}
 
 /* The typing effect */
 @keyframes typing {
@@ -348,4 +347,8 @@ footer h4 {
   min-font-size: 10px;
   max-font-size: 80px;
   font-size: 130%;
+}
+
+p {
+  font-family: "Lunasima", serif;
 }
