@@ -14,6 +14,7 @@ export default function Preloader() {
     //                 setDone(true);
     //             });
     //         }, 4200);
+    //         // 4200);
     //     }, [])
 
     if (done) {

@@ -1,5 +1,6 @@
 import Project from "./Project";
 import zoom from "./images/zoom.jpg";
+import portfolio from "./images/portfolio.png";
 import React from "react";
 
 export default function Projects() {
@@ -22,9 +23,10 @@ export default function Projects() {
             <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
                 <div className={"col-sm-12 col-lg-4"}>
                     <Project
-                        title={"Zoom Meeting Organizer"}
-                        img={zoom}
-                        description={"Python, Zoom API"}
+                        title={"Portfolio Website"}
+                        img={portfolio}
+                        langs={"React, JavaScript, HTML, CSS, SASS"}
+                        github={"https://github.com/JacobM819/Portfolio-Site"}
                         link={"link.com"}
                     ></Project>
                 </div>
@@ -32,7 +34,8 @@ export default function Projects() {
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
-                        description={"Lorem ipsum"}
+                        langs={"Python, Zoom API"}
+                        github={""}
                         link={"link.com"}
                     ></Project>
                 </div>
@@ -40,8 +43,10 @@ export default function Projects() {
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
-                        description={"Lorem ipsum"}
+                        langs={"Lorem ipsum"}
+                        github={""}
                         link={"link.com"}
+                        description={""}
                     ></Project>
                 </div>
             </div>
@@ -50,7 +55,8 @@ export default function Projects() {
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
-                        description={"Lorem ipsum"}
+                        langs={"Python, Zoom API"}
+                        github={""}
                         link={"link.com"}
                     ></Project>
                 </div>
@@ -58,16 +64,20 @@ export default function Projects() {
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
-                        description={"Lorem ipsum"}
+                        langs={"Python, Zoom API"}
+                        github={""}
                         link={"link.com"}
+                        description={""}
                     ></Project>
                 </div>
                 <div className={"col"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
                         img={zoom}
-                        description={"Lorem ipsum"}
+                        langs={"Python, Zoom API"}
+                        github={""}
                         link={"link.com"}
+                        description={""}
                     ></Project>
                 </div>
             </div>

@@ -1,11 +1,23 @@
 :root {
   --primary: #031102;
   --accent: limegreen;
+  --selection: #249a24;
   --f-code: 'JetBrains Mono', monospace;
 }
+::selection {
+  background: var(--selection);
+}
+::-moz-selection {
+  background: var(--selection);
+}
+::-webkit-selection {
+  background: var(--selection);
+}
+
 
 body {
-  background-color: #031102;
+  /*background-color: var(--primary);*/
+  background-color: #061e03;
   color: #fff;
 }
 
@@ -19,7 +31,6 @@ body {
 }
 
 header {
-  background-color: #031102;
   background-size: cover;
   height: 100vh;
 }
@@ -31,7 +42,8 @@ nav {
   display: block;
   width: 100%;
   z-index: 2;
-  background-color: var(--primary);
+  /*background-color: var(--primary);*/
+  background-color: #061e03;
   border-bottom: 2px solid #fff;
 }
 
@@ -94,7 +106,6 @@ main {
   padding-top: 60px;
   padding-bottom:60px;
   /*background-color: #1b1e21;*/
-  background-color: var(--primary);
 }
 
 hr {
@@ -112,9 +123,10 @@ hr {
   vertical-align: middle;
 }
 
-.about-image {
+.about-portrait{
   vertical-align: middle;
   min-width: 20px;
+  box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .proj-container {
@@ -160,6 +172,8 @@ hr {
   top: 0;
   transition: top ease-out .3s;
   color: white;
+  height: 19.5rem;
+  box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card:hover {
@@ -223,7 +237,6 @@ aside {
   text-decoration: none;
   padding: 0 5px 0 5px;
   position: fixed;
-  display: block;
   z-index: 3;
   right: 0;
   top: 50%;
@@ -242,11 +255,9 @@ aside li {
   line-height: 50px;
 }
 
-aside li a {
+aside ul li a {
   color: var(--accent);
   transition: ease-in-out .3s;
-  top: 0;
-  height: 100%;
 }
 
 aside li a:hover {
@@ -287,7 +298,7 @@ aside svg {
   border-radius: 6px;
   top: 50%;
   color: #cecece;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact {
@@ -299,7 +310,8 @@ aside svg {
 
 footer {
   text-align: center;
-  background-color: #030e02;
+  /*background-color: #030e02;*/
+  background-color: var(--primary);
   padding-bottom: 20px;
 }
 
@@ -309,9 +321,9 @@ footer {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  /*animation:*/
-  /*        typing 2.3s steps(30, end),*/
-  /*        blink-caret .85s step-end infinite;*/
+  animation:
+          typing 2.3s steps(30, end),
+          blink-caret .85s step-end infinite;
 }
 
 .header-type {
