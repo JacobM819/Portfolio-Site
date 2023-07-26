@@ -64,7 +64,7 @@ export default function Skills() {
                 <div className={"col-6"}>
                     <div className={"skills-card p-4"}>
                         <p>
-                            Currently, I am focused learning Amazon Web Services (AWS), as I know how big of a role cloud computing
+                            Currently, I am focused on learning Amazon Web Services (AWS), as I know how big of a role cloud computing
                             plays in today's tech industry.
                         </p>
                     </div>

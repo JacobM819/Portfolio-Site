@@ -13,6 +13,7 @@ function App() {
     useEffect(() => {
        Aos.init({ duration: 750});
     }, []);
+
         return (
       <body>
       <Modal/>

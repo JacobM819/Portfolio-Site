@@ -4,16 +4,12 @@
   --selection: #249a24;
   --f-code: 'JetBrains Mono', monospace;
 }
-::selection {
-  background: var(--selection);
-}
 ::-moz-selection {
   background: var(--selection);
 }
-::-webkit-selection {
+::selection {
   background: var(--selection);
 }
-
 
 body {
   /*background-color: var(--primary);*/
@@ -26,6 +22,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: limegreen;
 }
@@ -36,6 +34,8 @@ header {
 }
 
 nav {
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
   transition: top 0.3s;
   position: fixed;
   top: 0;
@@ -49,6 +49,8 @@ nav {
 
 nav a {
   color: #fff;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   text-decoration: none;
 }
@@ -84,6 +86,8 @@ header i {
 
 .flex a {
   color: #fff;
+  -webkit-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
 
@@ -92,14 +96,12 @@ header i {
 }
 
 .flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 50%;
-}
-
-.code-text {
-  font-family: "JetBrains Mono", monospace;
-  color: var(--accent);
 }
 
 main {
@@ -126,6 +128,7 @@ hr {
 .about-portrait{
   vertical-align: middle;
   min-width: 20px;
+  -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -145,7 +148,10 @@ hr {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -158,6 +164,8 @@ hr {
   height: 100%;
   width: 100%;
   opacity: 0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
   background-color: rgba(3, 17, 2, 0.5);
   border-top-left-radius: 5px;
@@ -170,9 +178,12 @@ hr {
 
 .card {
   top: 0;
+  -webkit-transition: top ease-out .3s;
+  -o-transition: top ease-out .3s;
   transition: top ease-out .3s;
   color: white;
   height: 19.5rem;
+  -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -200,17 +211,33 @@ hr {
 .code {
   font-family: var(--f-code);
 }
+.code-b {
+  font-family: "Jetbrains Mono B", monospace;
+  color: var(--accent);
+}
+
+.code-type {
+  font-family: var(--f-code);
+}
 
 .hidden {
   opacity: 0;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .show {
   opacity: 1;
+  -webkit-filter: blur(0);
   filter: blur(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -223,6 +250,8 @@ section {
   padding: 10px;
   border: 1px solid var(--accent);
   border-radius: 5px;
+  -webkit-transition: ease-in-out .3ms;
+  -o-transition: ease-in-out .3ms;
   transition: ease-in-out .3ms;
   position: relative;
 }
@@ -241,6 +270,7 @@ aside {
   right: 0;
   top: 50%;
   -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -257,6 +287,8 @@ aside li {
 
 aside ul li a {
   color: var(--accent);
+  -webkit-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
 
@@ -287,7 +319,11 @@ aside svg {
 .table-block {
   height: 40%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   white-space: nowrap;
 }
@@ -298,6 +334,7 @@ aside svg {
   border-radius: 6px;
   top: 50%;
   color: #cecece;
+  -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -316,23 +353,15 @@ footer {
 }
 
 .type {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .08em solid limegreen; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-          typing 2.3s steps(30, end),
-          blink-caret .85s step-end infinite;
-}
-
-.header-type {
   color: limegreen;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .08em solid limegreen; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  letter-spacing: .15em; /* Adjust as needed */
+  -webkit-animation:
+          typing 2.3s steps(30, end),
+          blink-caret .85s step-end infinite;
   animation:
           typing 2.3s steps(30, end),
           blink-caret .85s step-end infinite;
@@ -343,13 +372,25 @@ footer {
   border-top-right-radius: 10px;
 }
 
+.modal-title {
+  color: var(--accent);
+}
+
 /* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
 /* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: limegreen; }
+}
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: limegreen; }

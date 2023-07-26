@@ -2,16 +2,14 @@ export default function Modal() {
     return (
         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered" >
+        <div className="modal-dialog modal-lg modal-sm modal-dialog-centered" >
             <div className="modal-content" style={{backgroundColor:"var(--primary)"}}>
-                <div id={"modal-img"} className="modal-header p-0" style={{height:"200px"}}>
-                    {/*<img id={"modal-img"} className={"card-img-top"} src={""} alt={"project image"} width={1000}/>*/}
-                    <h1 className="modal-title text-white fs-5" id="exampleModalLabel">Title</h1>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close" style={{color:"limegreen"}}></button>
+                <div id={"modal-img"} className="modal-header p-5 position-relative" style={{height:"300px", backgroundSize:"cover", backgroundPosition:"center"}}>
+                    <div className={"type position-absolute"} style={{bottom:"15px"}}><h1 className="modal-title code-b fs-1" id="exampleModalLabel"></h1></div>
                 </div>
                 <div className="modal-body">
-                    <h6 id={"modal-langs"} className={"code"}></h6>
+                    <p id={"modal-descr"}></p>
+                    <h6 id={"modal-langs"} className={"code"} style={{color:"#bebebe"}}></h6>
                 </div>
                 <div className="modal-footer">
                     <div className={"d-flex justify-content-between"} style={{width:"20%", maxWidth:"50px", marginRight: "5%"}}>
