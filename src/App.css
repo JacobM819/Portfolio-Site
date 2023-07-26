@@ -210,6 +210,7 @@ hr {
 
 .code {
   font-family: var(--f-code);
+  color: var(--accent);
 }
 .code-b {
   font-family: "Jetbrains Mono B", monospace;
@@ -274,6 +275,14 @@ aside {
   transform: translate(-50%, -50%);
 }
 
+aside i {
+  top: 0;
+}
+
+aside i:hover {
+  top: -5px;
+}
+
 @media (max-width: 1050px) {
   aside {
     display: none;
@@ -282,7 +291,7 @@ aside {
 
 aside li {
   list-style: none;
-  line-height: 50px;
+  padding: 7px;
 }
 
 aside ul li a {
@@ -290,10 +299,6 @@ aside ul li a {
   -webkit-transition: ease-in-out .3s;
   -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
-}
-
-aside li a:hover {
-  top: -10px;
 }
 
 aside svg {
@@ -385,6 +390,7 @@ footer {
   from { width: 0 }
   to { width: 100% }
 }
+
 
 /* The typewriter cursor effect */
 @-webkit-keyframes blink-caret {

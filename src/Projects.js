@@ -3,6 +3,7 @@ import zoom from "./images/zoom.jpg";
 import portfolio from "./images/portfolio.png";
 import zuzaplan from "./images/zuzaplan.png";
 import times from "./images/ringgold.png";
+import sms from "./images/sms.png";
 import React from "react";
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
     return (
         <section id={"section3"} className={"proj-container"}>
             <div className={"d-flex gap-5"}>
-                <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
+                <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
                 <div style={{marginTop:"1.5rem"}}><h6 className={"code type"}>Click on the picture for more information</h6></div>
             </div>
             <hr/>
@@ -53,7 +54,7 @@ export default function Projects() {
                         title={"ZuzaPlan"}
                         img={zuzaplan}
                         langs={"C#, Visual Basic"}
-                        github={""}
+                        github={"https://github.com/Bubbycolditz/ZuzaPlan-OLD"}
                         link={"link.com"}
                         description={""}
                     ></Project>
@@ -72,9 +73,9 @@ export default function Projects() {
                 <div className={"col"}>
                     <Project
                         title={"School Management System"}
-                        img={zoom}
+                        img={sms}
                         langs={"PHP, Bootstrap, HTML, CSS"}
-                        github={""}
+                        github={"https://github.com/Bubbycolditz/New-Blog"}
                         link={"link.com"}
                         description={""}
                     ></Project>
@@ -84,8 +85,8 @@ export default function Projects() {
                         title={"The Ringgold Times"}
                         img={times}
                         langs={"Javascript, HTML, CSS"}
-                        github={""}
-                        link={"link.com"}
+                        github={"https://github.com/JacobM819/The-Ringgold-Times"}
+                        link={""}
                         description={""}
                     ></Project>
                 </div>

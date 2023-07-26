@@ -7,7 +7,7 @@ return (
     <section id={"section1"} style={{width: '60%', maxWidth: '1000px'}} className={"mt-0"}>
         <div className={"row"}>
             <div className={"col-8"}>
-                <h1 className={"code"} data-aos={"fade-right"} data-aos-once="true"><span
+                <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once="true"><span
                     style={{color: 'limegreen'}}>1.</span> About Me</h1>
                 <hr/>
                 <p>

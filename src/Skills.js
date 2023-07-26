@@ -6,21 +6,22 @@ import python from "./images/langs/python.png";
 import java from "./images/langs/java.png";
 import react from "./images/langs/react.png";
 import node from "./images/langs/node.png";
+import cs from "./images/langs/c#.png"
 import php from "./images/langs/php.png";
 import linux from "./images/langs/linux.png";
 import github from "./images/langs/github.png";
 import vs from "./images/langs/vs.svg.png"
 import bootstrap from "./images/langs/bootstrap.svg.png";
-import vim from "./images/langs/vim.svg.png";
+import myadmin from "./images/langs/myadmin.png";
 
 
 export default function Skills() {
     return (
         <section id={"section2"} className={"proj-container"}>
-            <h1 className={"code"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
+            <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
             <hr/>
             <div className={"d-block"}>
-            <h3 className={"code mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages & Technologies</h3>
+            <h3 className={"code-type mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages & Technologies</h3>
             <div className={"grid row ml-1"}>
                 <div className={"col-6"}>
                     <div className={"row justify-content-center"}>
@@ -59,9 +60,9 @@ export default function Skills() {
             </div>
             </div>
             <div className={"d-block"}>
-            <h3 className={"code mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
+            <h3 className={"code-type mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
             <div className={"grid row ml-1"}>
-                <div className={"col-6"}>
+                <div className={"col-lg-6"}>
                     <div className={"skills-card p-4"}>
                         <p>
                             Currently, I am focused on learning Amazon Web Services (AWS), as I know how big of a role cloud computing
@@ -69,12 +70,12 @@ export default function Skills() {
                         </p>
                     </div>
                 </div>
-                <div className={"col-6 my-auto"}>
+                <div className={"col-lg-6 my-auto"}>
                 <div className={"row justify-content-center"}>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={github} alt={"github"}/></div>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={vs} alt={"vs code"}/></div>
                     <div className={"col-3"}><span className={"grid-helper"}></span><img src={linux} alt={"linux"}/></div>
-                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={vim} alt={"vim"}/></div>
+                    <div className={"col-3"}><span className={"grid-helper"}></span><img src={myadmin} alt={"mysql"}/></div>
                 </div>
                 </div>
             </div>

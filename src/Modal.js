@@ -4,8 +4,8 @@ export default function Modal() {
          aria-hidden="true">
         <div className="modal-dialog modal-lg modal-sm modal-dialog-centered" >
             <div className="modal-content" style={{backgroundColor:"var(--primary)"}}>
-                <div id={"modal-img"} className="modal-header p-5 position-relative" style={{height:"300px", backgroundSize:"cover", backgroundPosition:"center"}}>
-                    <div className={"type position-absolute"} style={{bottom:"15px"}}><h1 className="modal-title code-b fs-1" id="exampleModalLabel"></h1></div>
+                <div id={"modal-img"} className="modal-header d-flex p-5 position-relative" style={{height:"300px", backgroundSize:"cover", backgroundPosition:"center"}}>
+                    <div className={"position-absolute"} style={{bottom:"15px"}}><h1 className="type modal-title code-b fs-1" id="exampleModalLabel"></h1></div>
                 </div>
                 <div className="modal-body">
                     <p id={"modal-descr"}></p>
