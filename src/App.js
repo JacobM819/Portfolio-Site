@@ -2,7 +2,8 @@ import Nav from "./Nav";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "./misc/aos.scss";
-import blank from "./images/blank.png";
+// import blank from "./images/blank.png";
+import portrait from "./images/portrait.jpg"
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
@@ -45,7 +46,7 @@ function App() {
                   </div>
               </div>
               <div className={"col-lg-4"}>
-                  <img id={"portrait"} className={"img-fluid"} src={blank} alt={"portrait"} width={"300vw"}/>
+                  <img id={"portrait"} className={"img-fluid"} src={portrait} alt={"portrait"} width={"300vw"}/>
               </div>
           </div>
       </header>

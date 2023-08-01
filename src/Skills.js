@@ -18,7 +18,8 @@ import myadmin from "./images/langs/myadmin.png";
 export default function Skills() {
     return (
         <section id={"section2"} className={"proj-container"}>
-            <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
+            <div data-aos={"fade-up"} data-aos-once={"true"}>
+            <h1 className={"code-type"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
             <hr/>
             <div className={"d-block"}>
             <h3 className={"code-type mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages & Technologies</h3>
@@ -37,7 +38,7 @@ export default function Skills() {
                         </div>
                         <div className={"col-3"}>
                             <div className={"table-block"}><span className={"grid-helper"}></span><img src={react} alt={"react"}/></div>
-                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={bootstrap} alt={"bootstrap"}/></div>
+                            <div className={"table-block"}><span className={"grid-helper"}></span><img src={cs} alt={"bootstrap"}/></div>
                             <div className={"table-block"}><span className={"grid-helper"}></span><img src={js} alt={"js"}/></div>
                         </div>
                     </div>
@@ -53,17 +54,28 @@ export default function Skills() {
                             like Python and Java in some of my personal projects.
                         </p>
                         <p>
-
+                            One of my favorite parts about software engineering is learning new languages. I am always learing a
+                            new language, and I am currently working on C++.
                         </p>
                     </div>
                 </div>
             </div>
             </div>
-            <div className={"d-block"}>
+            </div>
+            <div className={"d-block"} data-aos={"fade-up"} data-aos-once={"true"}>
             <h3 className={"code-type mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
             <div className={"grid row ml-1"}>
                 <div className={"col-lg-6"}>
                     <div className={"skills-card p-4"}>
+                        <p>
+                            Throughout my years in creating software, I have had the opportunity to explore a variety
+                            of tools that are used in modern-day applications.
+                        </p>
+                        <p>
+                            I have worked on many projects using Git and Github, while also hosting some applications
+                            using an Ubuntu Linux server that I have at home. In many of my applications that require
+                            a database, I typically use PHP my admin as a front end for MySQL.
+                        </p>
                         <p>
                             Currently, I am focused on learning Amazon Web Services (AWS), as I know how big of a role cloud computing
                             plays in today's tech industry.

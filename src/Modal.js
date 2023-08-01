@@ -9,7 +9,7 @@ export default function Modal() {
                 </div>
                 <div className="modal-body">
                     <p id={"modal-descr"}></p>
-                    <h6 id={"modal-langs"} className={"code"} style={{color:"#bebebe"}}></h6>
+                    <h6 id={"modal-langs"} className={"code mt-4"} style={{color:"#bebebe"}}></h6>
                 </div>
                 <div className="modal-footer">
                     <div className={"d-flex justify-content-between"} style={{width:"20%", maxWidth:"50px", marginRight: "5%"}}>

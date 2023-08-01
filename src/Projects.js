@@ -31,8 +31,11 @@ export default function Projects() {
                 <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Portfolio Website"}
-                        descr={"Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-                            "lorem ipsum"}
+                        descr={"This is the site that you are on right now! It is digital portfolio with the purpose" +
+                            " of showcasing what I have been working on as well as my up-to-date skills. " +
+                            " It provides my contact info and makes getting in touch with me more accessable" +
+                            " This project used a variety of front-end and back-end languages, and is one of my" +
+                            " favorite projects."}
                         img={portfolio}
                         imgPath={"./images/portfolio.png"}
                         langs={"React.js, Node.js, JavaScript, HTML, CSS"}
@@ -43,6 +46,11 @@ export default function Projects() {
                 <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
+                        descr={"A desktop application for automatically opening up zoom calls when they are scheduled" +
+                            " to start, and closing them when they are scheduled to close. This application" +
+                            " Makes online schooling easier by creating an organized list of calls each day" +
+                            " I creating this application with the aim of assisting students who take many online classes, and have to juggle around" +
+                            " a bunch of zoom links each day."}
                         img={zoom}
                         langs={"Python, Zoom API"}
                         github={""}
@@ -52,6 +60,11 @@ export default function Projects() {
                 <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"ZuzaPlan"}
+                        descr={"ZuzaPlan is a desktop event management application that makes it easy for a busy person to stay" +
+                            " organized. It has an event calendar for each month, and lets the user add new events." +
+                            " ZuzaPlan also has an online meeting organizer similar to the Zoom application." +
+                            " In this project, I lead a small group of students on both the front-end and back-end." +
+                            " This app was a great learning experience for me and taught me the ins and outs of C#."}
                         img={zuzaplan}
                         langs={"C#, Visual Basic"}
                         github={"https://github.com/Bubbycolditz/ZuzaPlan-OLD"}

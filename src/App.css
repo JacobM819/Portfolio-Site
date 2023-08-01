@@ -42,7 +42,6 @@ nav {
   display: block;
   width: 100%;
   z-index: 2;
-  /*background-color: var(--primary);*/
   background-color: #061e03;
   border-bottom: 2px solid #fff;
 }
@@ -62,7 +61,7 @@ nav a:hover {
 
 nav ul {
   min-height: 48px;
-  width: auto;
+  /*width: auto;*/
   text-align: center
 }
 
@@ -130,6 +129,7 @@ hr {
   min-width: 20px;
   -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
 }
 
 .proj-container {
@@ -283,7 +283,7 @@ aside i:hover {
   top: -5px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
   aside {
     display: none;
   }
@@ -379,6 +379,16 @@ footer {
 
 .modal-title {
   color: var(--accent);
+}
+
+.modal-body {
+  padding: 30px;
+}
+.modal-header {
+  border-bottom: 2px solid #229122;
+}
+.modal-footer {
+  border-top: 2px solid #229122;
 }
 
 /* The typing effect */

@@ -1,5 +1,6 @@
 import React from "react";
 import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
+import logo from "./images/logo.svg";
 export default function Nav() {
     let prevScrollPos = window.scrollY;
     window.onscroll = function() {
@@ -12,7 +13,6 @@ export default function Nav() {
         prevScrollPos = currentScrollPos;
     }
     return  (
-
         <nav id={'navbar'}>
             <ul>
                 <li><a href={"#section1"}>About Me</a></li>
