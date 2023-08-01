@@ -86,21 +86,24 @@ export default function Projects() {
                 <div className={"col"}>
                     <Project
                         title={"School Management System"}
+                        descr={""}
                         img={sms}
                         langs={"PHP, Bootstrap, HTML, CSS"}
                         github={"https://github.com/Bubbycolditz/New-Blog"}
                         link={"link.com"}
-                        description={""}
                     ></Project>
                 </div>
                 <div className={"col"}>
                     <Project
                         title={"The Ringgold Times"}
+                        descr={"In high school, I created a website to show news and events of my school district." +
+                            " It had information like the monthly cafeteria menu, the class times, and the standings" +
+                            " of the school sports teams. This was one of my first websites I created entirely on my" +
+                            " it greatly helped my understanding of Javascript."}
                         img={times}
                         langs={"Javascript, HTML, CSS"}
                         github={"https://github.com/JacobM819/The-Ringgold-Times"}
                         link={""}
-                        description={""}
                     ></Project>
                 </div>
             </div>

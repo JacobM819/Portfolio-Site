@@ -15,11 +15,11 @@ export default function Nav() {
     return  (
         <nav id={'navbar'}>
             <ul>
-                <li><a href={"#section1"}>About Me</a></li>
-                <li><a href={"#section2"}>Skills</a></li>
-                <li><a href={"#section3"}>Projects</a></li>
-                <li><a href={"#section4"}>Contact</a></li>
-                <li><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
+                <li data-aos={"fade-down"} data-aos-delay={"100"} data-aos-once={"true"}><a href={"#section1"}>About Me</a></li>
+                <li data-aos={"fade-down"} data-aos-delay={"200"} data-aos-once={"true"}><a href={"#section2"}>Skills</a></li>
+                <li data-aos={"fade-down"} data-aos-delay={"300"} data-aos-once={"true"}><a href={"#section3"}>Projects</a></li>
+                <li data-aos={"fade-down"} data-aos-delay={"400"} data-aos-once={"true"}><a href={"#section4"}>Contact</a></li>
+                <li data-aos={"fade-down"} data-aos-delay={"500"} data-aos-once={"true"}><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
             </ul>
         </nav>
     );

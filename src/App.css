@@ -283,15 +283,30 @@ aside i:hover {
   top: -5px;
 }
 
+.mobile-overlay {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media (max-width: 1250px) {
   aside {
     display: none;
   }
+  .mobile-overlay {
+    display: block;
+    background-color: var(--primary);
+  }
+  html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 aside li {
   list-style: none;
-  padding: 7px;
+  margin-bottom: 20px;
 }
 
 aside ul li a {
@@ -383,6 +398,7 @@ footer {
 
 .modal-body {
   padding: 30px;
+  position: relative;
 }
 .modal-header {
   border-bottom: 2px solid #229122;
