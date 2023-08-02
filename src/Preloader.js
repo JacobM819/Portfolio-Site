@@ -5,19 +5,19 @@ export default function Preloader() {
     const [data, setData] = useState([]);
     const [done, setDone] = useState(undefined);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         fetch('https://jsonplaceholder.typicode.com/posts/1')
-    //             .then((response) => response.json())
-    //             .then((json) => {
-    //                 setData(json);
-    //                 setDone(true);
-    //             });
-    //         }, 4200);
-    //         // 4200);
-    //     }, [])
+    useEffect(() => {
+        setTimeout(() => {
+            fetch('https://jsonplaceholder.typicode.com/posts/1')
+                .then((response) => response.json())
+                .then((json) => {
+                    setData(json);
+                    setDone(true);
+                });
+            }, 4200);
+            // 4200);
+        }, [])
 
-    if (done) {
+    if (!done) {
         return(
             <body className={"z-5"}>
             <div id={"loader"}>

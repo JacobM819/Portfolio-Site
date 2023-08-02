@@ -76,9 +76,15 @@ export default function Projects() {
             <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
                 <div className={"col"}>
                     <Project
-                        title={"Zoom Meeting Organizer"}
+                        title={"Primo Online Store"}
+                        descr={"Primo is an online store that I created for small businesses to purchase and " +
+                            " to sell their products. This web application allows users to buy products" +
+                            " directly from the business through the online store. " +
+                            " Primo is complete with an admin panel and database, allowing store managers to add products to the page " +
+                            " seamlessly with no additional coding required. Multiple businesses can use the app to upload their goods to sell, making" +
+                            " it a great option for any business looking for a quick way to put their products online."}
                         img={zoom}
-                        langs={"Python, Zoom API"}
+                        langs={"PHP, PHPmyAdmin, JavaScript, HTML, CSS"}
                         github={""}
                         link={"link.com"}
                     ></Project>
@@ -86,7 +92,12 @@ export default function Projects() {
                 <div className={"col"}>
                     <Project
                         title={"School Management System"}
-                        descr={""}
+                        descr={"This application is designed to help students create their upcoming schedules for school." +
+                            " The School Management System (SMS) lets students input their previously taken classes and" +
+                            " the app will provide a list of new classes that can be to take for the upcoming school" +
+                            " year. Once the student creates their schedule, they can view it on the app, making it" +
+                            " easier for students to stay organized."
+                        }
                         img={sms}
                         langs={"PHP, Bootstrap, HTML, CSS"}
                         github={"https://github.com/Bubbycolditz/New-Blog"}

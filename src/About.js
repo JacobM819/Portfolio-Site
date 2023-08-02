@@ -4,11 +4,10 @@ import React from "react";
 
 export default function About() {
 return (
-    <section id={"section1"} style={{width: '60%', maxWidth: '1000px'}} className={"mt-0"} data-aos={"fade-up"} data-aos-once={"true"}>
+    <section id={"section1"} style={{ maxWidth: '1000px'}} className={"mt-0"} data-aos={"fade-up"} data-aos-once={"true"}>
         <div className={"row"}>
             <div className={"col-8"}>
-                <h1 className={"code-type"}><span
-                    style={{color: 'limegreen'}}>1.</span> About Me</h1>
+                <h1 className={"code-type"}><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
                 <hr/>
                 <p>
                     Hello! My name is Jacob Meyer and I enjoy creating software for others to use. My interest in

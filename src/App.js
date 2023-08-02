@@ -29,26 +29,17 @@ function App() {
                   <li data-aos={"fade-left"} data-aos-delay={"400"}><a href="mailto:jakem3350@gmail.com" target="_blank" rel="noreferrer"><i className="fa-2x fa-light fa-envelope fa-fw"></i></a></li>
               </ul>
           </aside>
-          <div className={"row align-items-center"}>
-              <div className={"col-lg-8"}>
-                  <h3 style={{fontSize: "clamp(1.4rem, 2.0vw, 1.9rem"}} className={"code mb-0"} data-aos={"fade-up"} data-aos-delay={"900"} data-aos-once="true">
-                      Hi, nice to meet you. My name is
-                  </h3>
-                  <h1 style={{fontSize: "clamp(3rem, 5.5vw, 5.5rem)"}} className={"text-white"}  data-aos={"fade-up"} data-aos-delay={"1100"} data-aos-once="true">
-                      Jacob Meyer
-                  </h1>
-                  <h2 style={{fontSize: "clamp(1.1rem, 1.5vw, 1.7rem)"}} className={"text-white mt-3"} data-aos={"fade-up"} data-aos-delay={"1300"} data-aos-once="true">
-                      Computer Science Major | Penn State University
-                  </h2>
-                  <div className="flex mt-3" style={{paddingTop:"10px"}}>
-                      <a href="https://github.com/JacobM819" target="_blank" rel={"noreferrer"}><i className="fab fa-github"></i></a>
-                      <a href="https://www.linkedin.com/in/jacob-meyer-151b57245/" target="_blank" rel={"noreferrer"}><i className="fab fa-linkedin"></i></a>
-                      <a href="mailto:jakem3350@gmail.com" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
-                  </div>
-              </div>
-              <div className={"col-lg-4"}>
-                  <img id={"portrait"} className={"img-fluid"} src={portrait} alt={"portrait"} width={"300vw"}/>
-              </div>
+          <div className={"align-items-center"} style={{width:"1000px"}}>
+              <h3 style={{fontSize: "clamp(1.4rem, 2.0vw, 1.9rem"}} className={"code mb-0"} data-aos={"fade-up"} data-aos-delay={"900"} data-aos-once="true">
+                  Hi, nice to meet you. My name is
+              </h3>
+              <h1 style={{fontSize: "clamp(3rem, 5.5vw, 5.5rem)"}} className={"text-white"}  data-aos={"fade-up"} data-aos-delay={"1100"} data-aos-once="true">
+                  Jacob Meyer
+              </h1>
+              <h2 className={"dim"} style={{fontSize: "clamp(2rem, 3vw, 3rem)"}} data-aos={"fade-up"} data-aos-delay={"1300"} data-aos-once="true">I'm a student who likes making software.</h2>
+              <h2 className={"dim mt-3"} style={{fontSize: "clamp(1.1rem, 1.7vw, 1.7rem)"}} data-aos={"fade-up"} data-aos-delay={"1500"} data-aos-once="true">
+                  Computer Science Major | Penn State University
+              </h2>
           </div>
       </header>
       <main>
