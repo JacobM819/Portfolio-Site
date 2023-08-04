@@ -25,7 +25,7 @@ return (
                 </p>
                 <p>
                     When I am not in front of my computer, I like to stay active by playing tennis or going to the gym.
-                    I also like to play video games and watch movies or TV shows (back to the computer again).
+                    I also like to play video games and watch movies or TV shows.
                 </p>
             </div>
             <div className={"col-4 img-frame"}>

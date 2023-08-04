@@ -54,7 +54,7 @@ export default function Skills() {
                             like Python and Java in some of my personal projects.
                         </p>
                         <p>
-                            One of my favorite parts about software engineering is learning new languages. I am always learing a
+                            One of my favorite parts about software engineering is learning new languages. I am always learning a
                             new language, and I am currently working on C++.
                         </p>
                     </div>
@@ -74,7 +74,7 @@ export default function Skills() {
                         <p>
                             I have worked on many projects using Git and Github, while also hosting some applications
                             using an Ubuntu Linux server that I have at home. In many of my applications that require
-                            a database, I typically use PHP my admin as a front end for MySQL.
+                            a database, I typically use PHPmyAdmin as a front end for MySQL.
                         </p>
                         <p>
                             Currently, I am focused on learning Amazon Web Services (AWS), as I know how big of a role cloud computing

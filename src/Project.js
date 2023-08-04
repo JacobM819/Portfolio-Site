@@ -33,7 +33,7 @@ export default function Project(props) {
                     <p className={"card-text code"} style={{color:"#bebebe"}}>{props.langs}</p>
                     <div className={"d-flex justify-content-between position-absolute"} style={{width:"20%", maxWidth:"50px", minWidth:"40px", bottom: "1.3rem"}}>
                         <a href={props.github} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i id={"git-link"} className="fab fa-github"></i></a>
-                        <a  id={"web-link"} href={props.link} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i className="fa-regular fa-arrow-up-right-from-square"></i></a>
+                        {/*<a  id={"web-link"} href={props.link} style={{color: "limegreen"}} target="_blank" rel={"noreferrer"}><i className="fa-regular fa-arrow-up-right-from-square"></i></a>*/}
                     </div>
                 </div>
             </div>

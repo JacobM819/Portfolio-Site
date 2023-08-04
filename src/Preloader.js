@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Mobile from "./mobileWarning.js"
 import App from "./App";
 export default function Preloader() {
 
@@ -19,13 +20,14 @@ export default function Preloader() {
 
     if (!done) {
         return(
-            <body className={"z-5"}>
+            <body>
             <div id={"loader"}>
-                <h1 className={"type"}>
+                <h1 className={"type user-select-none"}>
                     <span className={"code"}>Jacob Meyer's</span>
-                    <span className={"code"}> Portfolio </span>
+                    <span id={"desk-pre"} className={"code"}> Portfolio </span>
                 </h1>
             </div>
+            <Mobile/>
             </body>
         );
     } else {

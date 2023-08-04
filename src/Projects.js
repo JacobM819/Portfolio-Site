@@ -4,18 +4,10 @@ import portfolio from "./images/portfolio.png";
 import zuzaplan from "./images/zuzaplan.png";
 import times from "./images/ringgold.png";
 import sms from "./images/sms.png";
+import primo from "./images/Primo.png";
 import React from "react";
 
 export default function Projects() {
-    // const observer = new IntersectionObserver(entries => {
-    //     entries.forEach( entry => {
-    //         if (entry.isIntersecting) {
-    //             entry.target.classList.add('typing')
-    //         }
-    //         });
-    //
-    // });
-    // observer.observe(document.querySelector('.header-type'));
     Project.defaultProps = {
         github: null,
         link: null
@@ -33,7 +25,7 @@ export default function Projects() {
                         title={"Portfolio Website"}
                         descr={"This is the site that you are on right now! It is digital portfolio with the purpose" +
                             " of showcasing what I have been working on as well as my up-to-date skills. " +
-                            " It provides my contact info and makes getting in touch with me more accessable" +
+                            " It provides my contact info and makes getting in touch with me more accessible." +
                             " This project used a variety of front-end and back-end languages, and is one of my" +
                             " favorite projects."}
                         img={portfolio}
@@ -46,9 +38,9 @@ export default function Projects() {
                 <div className={"col-sm-12 col-lg-4"}>
                     <Project
                         title={"Zoom Meeting Organizer"}
-                        descr={"A desktop application for automatically opening up zoom calls when they are scheduled" +
+                        descr={"A desktop application for automatically opening up Zoom calls when they are scheduled" +
                             " to start, and closing them when they are scheduled to close. This application" +
-                            " Makes online schooling easier by creating an organized list of calls each day" +
+                            " makes online schooling easier by creating an organized list of calls each day." +
                             " I creating this application with the aim of assisting students who take many online classes, and have to juggle around" +
                             " a bunch of zoom links each day."}
                         img={zoom}
@@ -83,7 +75,7 @@ export default function Projects() {
                             " Primo is complete with an admin panel and database, allowing store managers to add products to the page " +
                             " seamlessly with no additional coding required. Multiple businesses can use the app to upload their goods to sell, making" +
                             " it a great option for any business looking for a quick way to put their products online."}
-                        img={zoom}
+                        img={primo}
                         langs={"PHP, PHPmyAdmin, JavaScript, HTML, CSS"}
                         github={""}
                         link={"link.com"}
@@ -110,7 +102,7 @@ export default function Projects() {
                         descr={"In high school, I created a website to show news and events of my school district." +
                             " It had information like the monthly cafeteria menu, the class times, and the standings" +
                             " of the school sports teams. This was one of my first websites I created entirely on my" +
-                            " it greatly helped my understanding of Javascript."}
+                            " own, and it greatly helped my understanding of Javascript."}
                         img={times}
                         langs={"Javascript, HTML, CSS"}
                         github={"https://github.com/JacobM819/The-Ringgold-Times"}

@@ -6,7 +6,7 @@ export default function Contact() {
             <div className={"row justify-content-center"} style={{marginTop: "5rem", marginBottom:"5rem"}}>
             <div className={"col-3"}>
                 <i className="fa-solid fa-location-dot mb-2" style={{fontSize:"30px"}}></i>
-                <h4>Where i'm located</h4>
+                <h4>Where I'm located</h4>
                 <a href={"https://goo.gl/maps/FnPWgECYtr7W2sMUA"} target={"_blank"} rel="norefferer" className={"text-white"}>South Park, PA</a>
             </div>
             <div className={"col-3"}>
