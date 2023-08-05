@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
 return (
-    <section id={"section1"} style={{ maxWidth: '1000px'}} className={"mt-0"} data-aos={"fade-up"} data-aos-once={"true"}>
+    <section id={"about"} style={{ maxWidth: '1000px'}} className={"mt-0"} data-aos={"fade-up"} data-aos-once={"true"}>
         <div className={"row"}>
             <div className={"col-8"}>
                 <h1 className={"code-type"}><span style={{color: 'limegreen'}}>1.</span> About Me</h1>
@@ -20,7 +20,7 @@ return (
                     Currently, I am in my second year at Penn State University, where I am studying computer science.
                     I am searching for a Software Engineering Internship for the Summer of 2024, if you
                     are interested in hiring, feel free to contact me via email or LinkedIn.
-                    After college, I would like to have a career in back-end web-development, where I can create
+                    After college, I would like to have a career in back-end software-engineering, where I can create
                     efficient, scalable code for others to enjoy.
                 </p>
                 <p>

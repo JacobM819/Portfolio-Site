@@ -13,7 +13,7 @@ export default function Projects() {
         link: null
     }
     return (
-        <section id={"section3"} className={"proj-container"}>
+        <section id={"projects"} className={"proj-container"}>
             <div className={"d-flex gap-5"}>
                 <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
                 <div style={{marginTop:"1.5rem"}}><h6 className={"code type"}>Click on the picture for more information</h6></div>

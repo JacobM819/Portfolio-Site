@@ -307,6 +307,9 @@ aside i:hover {
     display: block;
     background-color: var(--primary);
   }
+  body {
+    background-color: var(--primary);
+  }
   html, body {margin: 0; height: 100%; overflow: hidden}
 }
 

@@ -17,7 +17,7 @@ import myadmin from "./images/langs/myadmin.png";
 
 export default function Skills() {
     return (
-        <section id={"section2"} className={"proj-container"}>
+        <section id={"skills"} className={"proj-container"}>
             <div data-aos={"fade-up"} data-aos-once={"true"}>
             <h1 className={"code-type"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
             <hr/>
