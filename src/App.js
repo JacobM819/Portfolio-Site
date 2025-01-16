@@ -49,7 +49,7 @@ function App() {
       </main>
       <footer>
           <Contact/>
-          <h6 style={{color: "limegreen"}}>Designed & Developed by Jacob Meyer 2023</h6>
+          <h6 style={{color: "limegreen"}}>Designed & Developed by Jacob Meyer 2024</h6>
       </footer>
       <Mobile/>
       </body>

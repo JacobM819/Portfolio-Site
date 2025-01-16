@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../src/misc/Meyer_CS_PSU_2022.pdf"
+import Resume from "../src/misc/Jacob Meyer Resume 2024.pdf"
 import logo from "./images/logo.svg";
 export default function Nav() {
     let prevScrollPos = window.scrollY;
