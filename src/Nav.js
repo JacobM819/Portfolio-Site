@@ -13,13 +13,27 @@ export default function Nav() {
         prevScrollPos = currentScrollPos;
     }
     return  (
-        <nav id={'navbar'}>
-            <ul>
-                <li data-aos={"fade-down"} data-aos-delay={"100"} data-aos-once={"true"}><a href={"#about"}>About Me</a></li>
-                <li data-aos={"fade-down"} data-aos-delay={"200"} data-aos-once={"true"}><a href={"#skills"}>Skills</a></li>
-                <li data-aos={"fade-down"} data-aos-delay={"300"} data-aos-once={"true"}><a href={"#projects"}>Projects</a></li>
-                <li data-aos={"fade-down"} data-aos-delay={"400"} data-aos-once={"true"}><a href={"#contact"}>Contact</a></li>
-                <li data-aos={"fade-down"} data-aos-delay={"500"} data-aos-once={"true"}><a href={Resume} target={"_blank"} rel={"noreferrer"}>Resume</a></li>
+        <nav className={"hide-mobile"} id={'navbar'}>
+            <ul className={"code"}>
+                <li data-aos={"fade-down"} data-aos-delay={"100"} data-aos-once={"true"}>
+                    <span>01.</span>
+                    <a href={"#about"}>About Me</a>
+                </li>
+                <li data-aos={"fade-down"} data-aos-delay={"200"} data-aos-once={"true"}>
+                    <span>02.</span>
+                    <a href={"#skills"}>Skills</a>
+                </li>
+                <li data-aos={"fade-down"} data-aos-delay={"300"} data-aos-once={"true"}>
+                    <span>03.</span>
+                    <a href={"#projects"}>Projects</a>
+                </li>
+                <li data-aos={"fade-down"} data-aos-delay={"400"} data-aos-once={"true"}>
+                    <span>04.</span>
+                    <a href={"#contact"}>Contact</a>
+                </li>
+                <li data-aos={"fade-down"} data-aos-delay={"500"} data-aos-once={"true"}>
+                    <a href={Resume} className={"nav-button code"} target={"_blank"} rel={"noreferrer"}>Resume</a>
+                </li>
             </ul>
         </nav>
     );

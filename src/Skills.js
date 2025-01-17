@@ -19,12 +19,17 @@ export default function Skills() {
     return (
         <section id={"skills"} className={"proj-container"}>
             <div data-aos={"fade-up"} data-aos-once={"true"}>
-            <h1 className={"code-type"}><span style={{color: "limegreen"}}>2.</span> Skills</h1>
+            <h1 className={"center-mobile code-type"}><span style={{color: "limegreen"}}>02.</span> Skills</h1>
             <hr/>
             <div className={"d-block"}>
-            <h3 className={"code-type mt-4 mb-4"}><span><i className="fa-regular fa-code"></i></span> Languages & Technologies</h3>
+            <h3 className={"center-mobile code-type mt-4 mb-4"}>
+                <span style={{marginRight:"20px"}}>
+                    <i className="fa-regular fa-code"></i>
+                </span>
+                Languages & Technologies
+            </h3>
             <div className={"grid row ml-1"}>
-                <div className={"col-6"}>
+                <div className={"col-12 col-md-6"}>
                     <div className={"row justify-content-center"}>
                         <div className={"col-3"}>
                             <div className={"table-block"}><span className={"grid-helper"}></span><img src={python} alt={"python"}/></div>
@@ -43,8 +48,8 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className={"col-6 mr-0"}>
-                    <div className={"skills-card p-4"}>
+                <div className={"col-12 col-md-6 mr-0"}>
+                    <div className={"skills-card"} style={{padding: "30px"}}>
                         <p>
                             I have worked with and created projects using some of the most popular and in-demand languages.
                             Many of the web apps that I have created recently use a combination of React.js, PHP, Node.js, and Javascript.
@@ -53,7 +58,7 @@ export default function Skills() {
                             I am proficient with functional programming and object-oriented design patterns, as I have worked in languages
                             like Python and Java in some of my personal projects.
                         </p>
-                        <p>
+                        <p className={"mb-0"}>
                             One of my favorite parts about software engineering is learning new languages. I am always learning a
                             new language, and I am currently working on C++.
                         </p>
@@ -62,11 +67,17 @@ export default function Skills() {
             </div>
             </div>
             </div>
-            <div className={"d-block"} data-aos={"fade-up"} data-aos-once={"true"}>
-            <h3 className={"code-type mb-4"} style={{marginTop: "8rem"}}><span><i className=" fa-light fa-screwdriver-wrench"></i></span> Tools</h3>
+            <div className={"hide-mobile"} style={{marginTop:"4rem"}}></div>
+            <div className={"d-block"} style={{marginTop:"5rem"}} data-aos={"fade-up"} data-aos-once={"true"}>
+            <h3 className={"center-mobile code-type mb-4"}>
+                <span style={{marginRight:"20px"}}>
+                    <i className="fa-light fa-screwdriver-wrench"></i>
+                </span>
+                Tools
+            </h3>
             <div className={"grid row ml-1"}>
                 <div className={"col-lg-6"}>
-                    <div className={"skills-card p-4"}>
+                    <div className={"skills-card"} style={{padding: "30px"}}>
                         <p>
                             Throughout my years in creating software, I have had the opportunity to explore a variety
                             of tools that are used in modern-day applications.
@@ -76,7 +87,7 @@ export default function Skills() {
                             using an Ubuntu Linux server that I have at home. In many of my applications that require
                             a database, I typically use PHPmyAdmin as a front end for MySQL.
                         </p>
-                        <p>
+                        <p className={"mb-0"}>
                             Currently, I am focused on learning Amazon Web Services (AWS), as I know how big of a role cloud computing
                             plays in today's tech industry.
                         </p>

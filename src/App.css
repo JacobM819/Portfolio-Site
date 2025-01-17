@@ -75,7 +75,7 @@ nav li {
   height: 48px;
   display: inline-block;
   padding: 16px 15px;
-  letter-spacing: 2px;
+  /*letter-spacing: 1px;*/
 }
 
 #portrait{
@@ -250,6 +250,16 @@ section {
   margin: 10rem auto 3rem auto;
 }
 
+.nav-button {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 8px 15px;
+  border-radius: 5px;
+  -webkit-transition: ease-in-out .3ms;
+  -o-transition: ease-in-out .3ms;
+  transition: ease-in-out .3ms;
+}
+
 .link-button {
   color: var(--accent);
   padding: 10px;
@@ -316,8 +326,15 @@ aside i:hover {
 }
 
 /*@media (max-width: 1100px){*/
-/*  nav {*/
+/*  .hide-mobile{*/
 /*    display: none;*/
+/*  }*/
+/*  .center-mobile {*/
+/*    margin: 0 auto; !* Horizontally center block elements *!*/
+/*    text-align: center; !* Center text and inline elements *!*/
+/*    display: flex; !* Enable flexbox for centering *!*/
+/*    justify-content: center; !* Horizontal centering for flex items *!*/
+/*    align-items: center; !* Vertical centering for flex items *!*/
 /*  }*/
 /*}*/
 
@@ -347,6 +364,11 @@ aside svg {
   vertical-align: middle;
 }
 
+.center-mobile {
+  margin: 0; /* Reset margin in case it's applied elsewhere */
+  text-align: left; /* Default text alignment */
+}
+
 .grid img {
   vertical-align: middle;
   max-width: 80px;
@@ -366,7 +388,7 @@ aside svg {
 }
 
 .skills-card {
-  height: 350px;
+  /*height: 350px;*/
   background-color: #092509;
   border-radius: 6px;
   top: 50%;
