@@ -14,9 +14,11 @@ export default function Projects() {
     }
     return (
         <section id={"projects"} className={"proj-container"}>
-            <div className={"d-flex gap-5"}>
-                <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>3.</span> My Projects</h1>
-                <div style={{marginTop:"1.5rem"}}><h6 className={"code type"}>Click on the picture for more information</h6></div>
+            <div className={"center-mobile d-flex gap-5"}>
+                    <h1 className={"code-type"} data-aos={"fade-right"} data-aos-once={"true"}><span style={{color: "limegreen"}}>03.</span> My Projects</h1>
+                <div className={"hide-mobile"} style={{marginTop:"1.5rem"}}>
+                    <h6 className={"code type"}>Click on the picture for more information</h6>
+                </div>
             </div>
             <hr/>
             <div className={"row mb-4"} data-aos={"fade-up"} data-aos-once={"true"}>
