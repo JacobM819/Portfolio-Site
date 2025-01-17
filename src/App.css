@@ -302,6 +302,8 @@ aside i:hover {
     display: none;
   }
 }
+
+/*Apply mobile overlay when width is below 1100*/
 @media (max-width: 1100px){
   .mobile-overlay {
     display: block;
@@ -312,6 +314,12 @@ aside i:hover {
   }
   html, body {margin: 0; height: 100%; overflow: hidden}
 }
+
+/*@media (max-width: 1100px){*/
+/*  nav {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
 
 aside li {
   list-style: none;

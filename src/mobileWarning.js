@@ -7,7 +7,6 @@ export default function mobileWarning() {
                 <br/>
                 I am working on it now so it should be up soon. Thank you!
             </h3>
-
         </div>
     )
 }
