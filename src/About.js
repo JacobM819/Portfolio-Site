@@ -5,12 +5,13 @@ import React from "react";
 export default function About() {
 return (
     <section id={"about"} style={{ maxWidth: '1000px'}} className={"mt-0"} data-aos={"fade-up"} data-aos-once={"true"}>
-        <div className={"d-flex gap-5"}>
-            <h1 className={"code-type"}><span style={{color: "limegreen"}}>1.</span>About Me</h1>
-        </div>
-        <hr/>
+
         <div className={"row"}>
-            <div className={"col-8"}>
+            <div className={"col-lg-8 col-12 order-1 order-lg-1"}>
+                <div className={"d-flex gap-5"}>
+                    <h1 className={"code-type"}><span style={{color: "limegreen"}}>1.</span>About Me</h1>
+                </div>
+                <hr/>
                 <p>
                     Hello! I’m Jacob Meyer, and I have a passion for creating software that solves real problems.
                     My interest in creating apps started in high school, where I learned to code to make online school easier
@@ -31,7 +32,8 @@ return (
                     the gym. I also like to play video games and watch movies or TV shows.
                 </p>
             </div>
-            <div className={"col-4 img-frame"}>
+            <div className={"col-lg-4 col-12 order-2 order-lg-2 img-frame img-frame"}>
+                <br/>
                 <span className={"helper"}></span>
                 <img className={"img-fluid about-portrait"} src={portrait} width={"400vw"} alt={"portrait"}/>
             </div>

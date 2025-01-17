@@ -36,7 +36,7 @@ function App() {
               <h1 style={{fontSize: "clamp(3rem, 5.5vw, 5.5rem)"}} className={"text-white"}  data-aos={"fade-up"} data-aos-delay={"1100"} data-aos-once="true">
                   Jacob Meyer
               </h1>
-              <h2 className={"dim"} style={{fontSize: "clamp(2rem, 3vw, 3rem)"}} data-aos={"fade-up"} data-aos-delay={"1300"} data-aos-once="true">I'm a student who likes making software.</h2>
+              <h2 className={"dim"} style={{fontSize: "clamp(2rem, 3vw, 3rem)"}} data-aos={"fade-up"} data-aos-delay={"1300"} data-aos-once="true">I’m a student who loves to code and create.</h2>
               <h2 className={"dim mt-3"} style={{fontSize: "clamp(1.1rem, 1.7vw, 1.7rem)"}} data-aos={"fade-up"} data-aos-delay={"1500"} data-aos-once="true">
                   Computer Science Major | Penn State University
               </h2>
