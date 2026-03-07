@@ -37,45 +37,54 @@ header {
   color: #b4b4b4;
 }
 
-nav {
-  -webkit-transition: top 0.3s;
-  -o-transition: top 0.3s;
-  transition: top 0.3s;
+#navbar {
   position: fixed;
   top: 0;
-  display: block;
   width: 100%;
-  z-index: 2;
+  z-index: 1000;
   background-color: #061e03;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
+  transition: transform 0.3s ease-in-out;
 }
 
-nav a {
-  color: #fff;
-  -webkit-transition: ease-in-out 0.3s;
-  -o-transition: ease-in-out 0.3s;
+#navbar a.nav-button {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 8px 15px;
+  border-radius: 5px;
   transition: ease-in-out 0.3s;
-  text-decoration: none;
 }
 
-nav a:hover {
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+#navbar a:hover {
   color: var(--accent);
   text-decoration: none;
 }
 
-nav ul {
-  min-height: 48px;
-  /*width: auto;*/
-  text-align: center
+.navbar-visible {
+  transform: translateY(0);
 }
 
-nav li {
-  position: relative;
-  list-style: none;
-  height: 48px;
-  display: inline-block;
-  padding: 16px 15px;
-  /*letter-spacing: 1px;*/
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: #061e03;
+    margin-top: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0;
+  }
 }
 
 #portrait{
@@ -248,16 +257,6 @@ hr {
 
 section {
   margin: 10rem auto 3rem auto;
-}
-
-.nav-button {
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 8px 15px;
-  border-radius: 5px;
-  -webkit-transition: ease-in-out .3ms;
-  -o-transition: ease-in-out .3ms;
-  transition: ease-in-out .3ms;
 }
 
 .link-button {
