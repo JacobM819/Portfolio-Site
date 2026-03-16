@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  portfolio-site:
+    build: .
+    container_name: portfolio-site
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      - jakeys_net
+
+networks:
+  jakeys_net:
+    external: true
