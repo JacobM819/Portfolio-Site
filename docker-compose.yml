@@ -1,15 +1,25 @@
-version: '3'
-
 services:
+  # Development Service (node.js)
+  portfolio-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: portfolio-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+
+  # Production Service (nginx)
   portfolio-site:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: portfolio-site
     restart: unless-stopped
-    expose:
-      - "8080"
-    networks:
-      - jakeys_net
-
-networks:
-  jakeys_net:
-    external: true
+    ports:
+      - "8080:8080"

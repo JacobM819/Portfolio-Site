@@ -1,0 +1,17 @@
+FROM node:18-alpine
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Default React dev port
+EXPOSE 3000
+
+# Ensure hot reload works in Docker
+ENV WATCHPACK_POLLING=true
+
+CMD ["npm", "start"]
