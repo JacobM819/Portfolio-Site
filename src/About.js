@@ -9,7 +9,7 @@ return (
         <div className={"row"}>
             <div className={"col-lg-8 col-12 order-1 order-lg-1"}>
                 <div className={"center-mobile d-flex gap-5"}>
-                    <h1 className={"code-type"}><span style={{color: "limegreen"}}>01.</span> About Me</h1>
+                    <h1 className={"code-type"}><span className={"code"}>01.</span> About Me</h1>
                 </div>
                 <hr/>
                 <p>
@@ -40,7 +40,7 @@ return (
         </div>
         <div className={"row"}>
             <div className={"center-mobile col mt-4"}>
-            <a href={Resume} className={"link-button resume-button code"} target={"_blank"} rel={"noreferrer"}>Check out my resume</a>
+            <a href={Resume} className={"link-button code"} target={"_blank"} rel={"noreferrer"}>Check out my resume</a>
             </div>
         </div>
     </section>

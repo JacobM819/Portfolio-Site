@@ -21,7 +21,7 @@ export default function Skills() {
     <section id={"skills"} className={"proj-container"}>
       <div data-aos={"fade-up"} data-aos-once={"true"}>
         <h1 className={"center-mobile code-type"}>
-          <span style={{ color: "limegreen" }}>02.</span> Skills
+          <span className={"code"}>02.</span> Skills
         </h1>
         <hr />
         <div className={"d-block"}>

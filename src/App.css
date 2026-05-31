@@ -1,8 +1,10 @@
 :root {
   --primary: #031102;
-  --accent: limegreen;
+  --accent: #6feefc;
   --selection: #249a24;
+  --background-color: #111314;
   --f-code: 'JetBrains Mono', monospace;
+  --f-primary: 'Inter', sans-serif;
 }
 ::-moz-selection {
   background: var(--selection);
@@ -11,10 +13,15 @@
   background: var(--selection);
 }
 
+html {
+  background-color: var(--background-color);
+}
+
 body {
   /*background-color: var(--primary);*/
-  background-color: #061e03;
-  color: #fff;
+  background-color: transparent;
+  font-family: var(--f-primary);
+  color: #ffffff;
 }
 
 #loader {
@@ -42,7 +49,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #061e03;
+  background-color: var(--background-color);
   border-bottom: 2px solid rgba(255, 255, 255, 1);
   transition: transform 0.3s ease-in-out;
 }
@@ -474,4 +481,12 @@ footer h4 {
 
 p {
   font-family: "Lunasima", serif;
+}
+
+
+.pixel-blast-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }

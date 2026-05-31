@@ -10,6 +10,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Modal from "./Modal";
 import Mobile from "./mobileWarning.js";
+import PixelBlast from "./PixelBlast.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -22,6 +23,27 @@ function App() {
 
   return (
     <body>
+      <div style={{ width: "100%", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: -1 }}>
+        <PixelBlast
+          variant="square"
+          pixelSize={4}
+          color="#326489"
+          patternScale={2}
+          patternDensity={1}
+          pixelSizeJitter={0}
+          enableRipples
+          rippleSpeed={0.4}
+          rippleThickness={0.12}
+          rippleIntensityScale={1.5}
+          liquid={false}
+          liquidStrength={0.12}
+          liquidRadius={1.2}
+          liquidWobbleSpeed={5}
+          speed={0.5}
+          edgeFade={0.1}
+          transparent
+        />
+      </div>
       <Modal />
       <Nav />
       <header className={"d-flex align-items-center justify-content-center"}>
@@ -101,10 +123,13 @@ function App() {
             </li>
           </ul>
         </aside>
-        <div className={"align-items-center"} style={{ width: "1000px" }}>
+        <div
+          className={"align-items-center text-center"}
+          style={{ width: "1000px" }}
+        >
           <h3
-            style={{ fontSize: "clamp(1.4rem, 2.0vw, 1.9rem" }}
-            className={"code mb-0"}
+            style={{ fontSize: "clamp(1.0em, 1.0vw, 1.9rem" }}
+            className={"code mb-3"}
             data-aos={"fade-up"}
             data-aos-delay={"900"}
             data-aos-once="true"
@@ -112,8 +137,8 @@ function App() {
             Hi, nice to meet you. My name is
           </h3>
           <h1
-            style={{ fontSize: "clamp(3rem, 5.5vw, 5.5rem)" }}
-            className={"text-white"}
+            style={{ fontSize: "clamp(2.5rem, 4vw, 5.5rem)" }}
+            className={"text-white mb-2"}
             data-aos={"fade-up"}
             data-aos-delay={"1100"}
             data-aos-once="true"
@@ -123,9 +148,8 @@ function App() {
 
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               "Software Engineer",
-              2000, // wait 1s before replacing "Mice" with "Hamsters"
+              2000,
               "Site Reliability Engineer",
               2000,
               "Project Manager",
@@ -139,16 +163,7 @@ function App() {
             repeat={Infinity}
           />
           <h2
-            className={"dim"}
-            style={{ fontSize: "clamp(2rem, 3vw, 3rem)" }}
-            data-aos={"fade-up"}
-            data-aos-delay={"1300"}
-            data-aos-once="true"
-          >
-            I’m a student who loves to code and create.
-          </h2>
-          <h2
-            className={"dim mt-3"}
+            className={"dim mt-4"}
             style={{ fontSize: "clamp(1.1rem, 1.7vw, 1.7rem)" }}
             data-aos={"fade-up"}
             data-aos-delay={"1500"}
