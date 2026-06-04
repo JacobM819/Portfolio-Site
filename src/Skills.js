@@ -12,6 +12,7 @@ import linux from "./images/langs/linux.png";
 import github from "./images/langs/github.png";
 import vs from "./images/langs/vs.svg.png";
 import myadmin from "./images/langs/myadmin.png";
+import MagicBento from "./react-bits/MagicBento.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
@@ -31,6 +32,19 @@ export default function Skills() {
             </span>
             Languages & Technologies
           </h3>
+          <MagicBento
+            textAutoHide={true}
+            enableStars
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={false}
+            enableMagnetism={false}
+            clickEffect
+            spotlightRadius={230}
+            particleCount={12}
+            glowColor="100, 238, 252"
+            disableAnimations={false}
+          />
           <div className={"grid row ml-1"}>
             <div className={"col-12 col-md-6"}>
               <div className={"row justify-content-center"}>

@@ -10,7 +10,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Modal from "./Modal";
 import Mobile from "./mobileWarning.js";
-import PixelBlast from "./PixelBlast.js";
+import PixelBlast from "./react-bits/PixelBlast.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -137,7 +137,7 @@ function App() {
             Hi, nice to meet you. My name is
           </h3>
           <h1
-            style={{ fontSize: "clamp(2.5rem, 4vw, 5.5rem)" }}
+            style={{ fontSize: "clamp(2.5rem, 4vw, 5.5rem)", fontWeight:"600" }}
             className={"text-white mb-2"}
             data-aos={"fade-up"}
             data-aos-delay={"1100"}

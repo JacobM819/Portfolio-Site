@@ -1,5 +1,5 @@
 :root {
-  --primary: #031102;
+  --primary: #111314;
   --accent: #6feefc;
   --selection: #249a24;
   --background-color: #111314;
@@ -412,7 +412,6 @@ aside svg {
 
 footer {
   text-align: center;
-  /*background-color: #030e02;*/
   background-color: var(--primary);
   padding-bottom: 20px;
 }
