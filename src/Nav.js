@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Resume from "../src/misc/Jacob Meyer Resume 2024.pdf";
-import logo from "./images/logo.svg";
+import logo from "./images/logo.png";
 
 export default function Nav() {
     const [showNav, setShowNav] = useState(true);

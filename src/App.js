@@ -15,6 +15,7 @@ import PixelBlast from "./react-bits/PixelBlast.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   useEffect(() => {
@@ -22,8 +23,17 @@ function App() {
   }, []);
 
   return (
-    <body>
-      <div style={{ width: "100%", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: -1 }}>
+    <div className="app-container">
+      <div
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: -1,
+        }}
+      >
         <PixelBlast
           variant="square"
           pixelSize={4}
@@ -124,53 +134,104 @@ function App() {
           </ul>
         </aside>
         <div
-          className={"align-items-center text-center"}
-          style={{ width: "1000px" }}
+          className="d-flex flex-column align-items-start text-start px-4 px-md-5"
+          style={{ width: "100%", maxWidth: "1000px" }}
         >
-          <h3
-            style={{ fontSize: "clamp(1.0em, 1.0vw, 1.9rem" }}
-            className={"code mb-3"}
-            data-aos={"fade-up"}
-            data-aos-delay={"900"}
+          <div data-aos="fade-up" data-aos-delay="700" data-aos-once="true">
+            <h3
+              style={{
+                fontSize: "clamp(1.0rem, 1.2vw, 1.5rem)",
+                color: "var(--accent)",
+              }}
+              className="code mb-3"
+            >
+              Hi, nice to meet you. My name is
+            </h3>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
+            <h1
+              style={{
+                fontSize: "clamp(2.5rem, 6vw, 5.5rem)",
+                fontWeight: "700",
+                lineHeight: "1.1",
+              }}
+              className="text-white mb-2"
+            >
+              Jacob Meyer.
+            </h1>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="1100"
             data-aos-once="true"
+            className="mb-4"
+            style={{ minHeight: "3.5rem" }}
           >
-            Hi, nice to meet you. My name is
-          </h3>
-          <h1
-            style={{ fontSize: "clamp(2.5rem, 4vw, 5.5rem)", fontWeight:"600" }}
-            className={"text-white mb-2"}
-            data-aos={"fade-up"}
-            data-aos-delay={"1100"}
-            data-aos-once="true"
-          >
-            Jacob Meyer
-          </h1>
-
-          <TypeAnimation
-            sequence={[
-              "Software Engineer",
-              2000,
-              "Site Reliability Engineer",
-              2000,
-              "Project Manager",
-              2000,
-              "Deployer of agents",
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: "2em", display: "inline-block" }}
-            repeat={Infinity}
-          />
-          <h2
-            className={"dim mt-4"}
-            style={{ fontSize: "clamp(1.1rem, 1.7vw, 1.7rem)" }}
-            data-aos={"fade-up"}
-            data-aos-delay={"1500"}
-            data-aos-once="true"
-          >
-            B.S. Computer Science | Penn State University
-          </h2>
+            <TypeAnimation
+              sequence={[
+                "I build robust software solutions.",
+                2000,
+                "I design resilient cloud systems.",
+                2000,
+                "I engineer site reliability.",
+                2000,
+                "I deploy autonomous agents.",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{
+                fontSize: "clamp(1.5rem, 3.5vw, 2.5rem)",
+                fontWeight: "600",
+                display: "inline-block",
+                color: "var(--accent)",
+              }}
+              repeat={Infinity}
+            />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="1300" data-aos-once="true">
+            <p
+              className="dim col-12 col-md-9 px-0 mb-5"
+              style={{
+                fontSize: "clamp(1rem, 1.3vw, 1.2rem)",
+                lineHeight: "1.6",
+                color: "#a0aEC0",
+              }}
+            >
+              I am a Software Engineer and SRE specializing in building scalable
+              systems, automating DevOps pipelines, and architecting resilient
+              infrastructure. Penn State Computer Science alumnus.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true">
+            <a
+              href="#projects"
+              className="btn btn-outline-info px-4 py-2.5 fw-semibold"
+              style={{
+                color: "var(--accent)",
+                borderColor: "var(--accent)",
+                borderRadius: "4px",
+                transition: "all 0.3s ease",
+                fontFamily: "var(--f-code)",
+                fontSize: "0.95rem",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor =
+                  "rgba(110, 238, 252, 0.1)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              View my work
+             <FontAwesomeIcon
+               icon={faAngleDown}
+               className="fa-fw ms-2"
+             />
+            </a>
+          </div>
         </div>
       </header>
       <main>
@@ -181,11 +242,11 @@ function App() {
       <footer>
         <Contact />
         <h6 style={{ color: "limegreen" }}>
-          Designed & Developed by Jacob Meyer 2024
+          Designed & Developed by Jacob Meyer 2026
         </h6>
       </footer>
       <Mobile />
-    </body>
+    </div>
   );
 }
 
