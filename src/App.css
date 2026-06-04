@@ -364,12 +364,6 @@ aside svg {
   width: 5vw;
 }
 
-.grid-helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
 .center-mobile {
   margin: 0; /* Reset margin in case it's applied elsewhere */
   text-align: left; /* Default text alignment */
@@ -379,28 +373,6 @@ aside svg {
   vertical-align: middle;
   max-width: 80px;
   margin:auto;
-}
-
-.table-block {
-  height: 40%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  white-space: nowrap;
-}
-
-.skills-card {
-  /*height: 350px;*/
-  background-color: #092509;
-  border-radius: 6px;
-  top: 50%;
-  color: #cecece;
-  -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact {
